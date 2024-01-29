@@ -14,6 +14,7 @@ export default {
 
 <template>
    <h1>about us</h1>
+   <p>ciao</p>
 </template>
 
 <style lang="scss" scoped>
