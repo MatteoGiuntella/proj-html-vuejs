@@ -13,7 +13,9 @@ export default {
 </script>
 
 <template>
-   <h1>Homee</h1>
+   <div class="container">
+    <h1>home</h1>
+   </div>
 </template>
 
 <style lang="scss" scoped>

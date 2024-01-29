@@ -1,5 +1,13 @@
 @use "partials/variables.scss" as *;
 @use "partials/mixins.scss" as *;
 
+
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+.my-container{
+    width: 1000px;
+    height: 100px;
+    background-color: aqua;
+    margin: 0 auto;
+}
