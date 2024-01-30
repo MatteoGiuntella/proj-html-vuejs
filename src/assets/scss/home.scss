@@ -4,17 +4,47 @@ h1{
     background-color: antiquewhite;
 }
 
+
+//GENERAL
+.text-secondary-grey{
+    color: $darkgray;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.text-big-purple{
+    color: $purple;
+    font-size: 2.7em;
+    font-weight: 600;
+
+}
+
+.text-green{
+    color: #20AD96;
+    font-size: 2.7em;
+    font-weight: 300;
+}
+
+.color_dark_gray{
+    color: $darkgray;
+}
 //JUMBO
 .jumbo_container{
-    background-color: rgb(232, 230, 227);
+    background-color: $beige;
     background-image: url("/img/jumbo-overlay.svg");
     background-repeat: no-repeat;
     background-position: center;
-    // transform: rotate(180deg);
+    background-size: 200%;
+    background-attachment: fixed;
+    background-position-y: -200px;
+    background-position-x: -500px;
+    transform: rotate(180deg);
+    transform: scaley(-1);
     padding: 30px;
 
     .container{
-        // transform: rotate(180deg);
+        transform: rotate(180deg);
+        transform: scaley(-1);
+
         
         //left JUMBO
         .left_jumbo_container{
@@ -27,7 +57,7 @@ h1{
                 font-weight: 600;
             }
             p{
-                color: rgb(141, 139, 163);
+                color: $darkgray;
                 line-height: 30px;
                 font-weight: 300;
                 font-size: 1.2em;
@@ -36,6 +66,7 @@ h1{
                 background-color: $green;
                 padding: 10px 25px;
                 border: none;
+                color: white;
             }
         }
         
@@ -58,15 +89,16 @@ h1{
 //SECTION 1
 .section_1{
     margin-top: 20px;
+    margin-bottom: 50px;
     padding: 60px;
 
     h6{
         font-weight: 300;
-        color: gray;
+        color: $darkgray;
     }
 
     span:first-of-type {
-        color: rgb(82, 58, 92) ;
+        color: $purple;
         font-size: 2.7em;
         font-weight: 600;
     }
@@ -100,7 +132,7 @@ h1{
         }
         .description_card_section{
             font-weight: 150;
-            color: gray;
+            color: $darkgray;
         }
 
         a{
@@ -113,9 +145,10 @@ h1{
 //SECTION 2
 .section_2{
     margin-top: 50px;
+    margin-bottom: 50px;
     .text-information-container{
         span:first-of-type, span:last-of-type{
-            color: rgb(82, 58, 92) ;
+            color: $purple;
             font-size: 2.7em;
             font-weight: 600;
         }
@@ -134,3 +167,105 @@ h1{
         display: block;
     }
 }
+
+
+//SECTION 3
+.section_3{
+    margin-top: 50px;
+  
+    padding: 50px;
+    background-color: $beige;
+    
+    .little_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 900px;
+        margin: 0 auto;
+        .number_section_3{
+            display: flex;
+            justify-content: center;
+            color: $green;
+            font-size: 2.7em;
+            font-weight: 600;
+        }
+        .info_section_3{
+            display: flex;
+            justify-content: center;
+            color: $purple;
+        }
+    
+    }
+    
+    
+}
+
+//SECTION 4
+.section_4{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $lightbeige;
+    
+    button{
+        background-color: $green;
+        padding: 10px 25px;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        padding: 6px 20px;
+       
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 0.8em;
+
+            i{
+               
+                margin-left: 5px;
+            }
+        }
+    } 
+}
+
+.card{
+    overflow: hidden;
+    .card-body{
+        .img_person{
+            
+            img{
+                border-radius: 50%;
+                display: block;
+            }
+        }
+        .card-text{
+            line-height: 30px;
+        }
+        .name_card{
+            margin-left: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $darkgray;
+        }
+    
+        
+    }
+    
+    .price_card_container{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: $green;
+        color: white;
+        padding: 7px;
+        font-weight: 600;
+        border-bottom-left-radius: 7px;
+    }
+    
+
+}
+
+
