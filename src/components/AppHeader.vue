@@ -4,40 +4,51 @@ export default {
     return {
       navbar: [
         {
-          title: "Home",
-          list: [
-            "ciao",
-            "ciao",
-            "ciao",
-            "ciao",
-            "ciao",
-
-          ],
-            
-        },
-        {
           title: "Pages",
           list: [
-            "bau",
-            "bau",
-            "bau",
+            "Start here",
+            "Succes story",
+            "About me",
+            "About us 01",
+            "About us 02",
+            "About us 03",
+            "Contact me",
+            "Contact us",
+            "Paurchause Guide",
+            "Privacy Policy",
+            "Terms of Service",
           ],
         },
         {
           title: "Courses",
-      
+          list: [
+            "Courses Grid 01",
+            "Courses Grid 02",
+            "Courses Grid 03",
+            "Membership Levels",
+            "Become a Teacher",
+            "Profile",
+            "Checkout",
+            "Single Layout",
+          ],
         },
         {
           title: "Features",
-        
+          list: ["Events", "Zoom meetings"],
         },
         {
           title: "Blog",
-         
+          list: ["Blog Grid", "Blog Masonry", "Blog Classic", "Blog List"],
         },
         {
           title: "Shop",
-       
+          list: [
+            "Shop left sidebar",
+            "Shop right sidebar",
+            "Cart",
+            "Whishlist",
+            "Single Product",
+          ],
         },
       ],
     };
@@ -48,7 +59,7 @@ export default {
 
 <template>
   <header>
-    <div class="container">
+    <div class="container position-relative">
       <div class="row align-items-center p-3">
         <div class="col-2">
           <img
@@ -58,8 +69,22 @@ export default {
           />
         </div>
 
-        <div class="col-6 d-flex">
-          <div class="dropdown d-flex justify-content-end " v-for="(elem, i) in navbar">
+        <div class="col-6 d-flex justify-content-end">
+          <div class="dropdown my-drop d-flex position-relative">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <router-link :to="{ name: 'home' }"> Home</router-link>
+            </a>
+          </div>
+          <div
+            class="dropdown d-flex justify-content-end"
+            v-for="(elem, i) in navbar"
+          >
             <a
               class="btn dropdown-toggle"
               href="#"
@@ -71,10 +96,10 @@ export default {
             </a>
 
             <ul class="dropdown-menu">
-              <li v-for="(elem, j) in navbar[i].list" >
-                  <a class="dropdown-item" href="#">
-                    {{elem}}
-                  </a>
+              <li v-for="(elem, j) in navbar[i].list">
+                <a class="dropdown-item" href="#">
+                  {{ elem }}
+                </a>
               </li>
             </ul>
           </div>
@@ -128,7 +153,38 @@ export default {
           </div>
         </div>
       </div>
-      
+      <div class="hover-container">
+        <div class="d-flex justify-content-between "> 
+          <div class="d-flex">
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div class="mx-3">
+            <img
+              src="../../public/img/homepages-mega-menu-image-alt.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 </template>
@@ -137,10 +193,31 @@ export default {
 @use "../assets/scss/main" as *;
 @use "../assets/scss/partials/variables.scss" as *;
 header {
- 
   width: 100%;
   background-color: $beige;
   .container {
+    position: relative;
+    .hover-container {
+      background-color: $white;
+      width: 90%;
+      position: absolute;
+      left: 100px;
+      bottom: -280px;
+      z-index: 1;
+      display: none;
+    
+      ul {
+        list-style: none;
+        margin: 0;
+        li {
+          margin: 10px;
+        }
+      }
+    }
+    .my-drop:hover .hover-container {
+        display: block;
+      }
+
     .box-left-navbar {
       width: 150px;
       img {
