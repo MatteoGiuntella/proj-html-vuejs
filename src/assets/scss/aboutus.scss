@@ -1,29 +1,29 @@
-<div>
-        <ul>
-          <li>
-           <router-link :to="{ name: 'home' }"> Home</router-link>
-          </li>
-          <li>
-            <router-link :to="{ name: 'aboutus' }"> aboutus</router-link>
-          </li>
-          <li>
-            <router-link :to="{ name: 'starthere' }">starthere</router-link>
-          </li>
-        </ul>
-</div>
+// <div>
+//         <ul>
+//           <li>
+//            <router-link :to="{ name: 'home' }"> Home</router-link>
+//           </li>
+//           <li>
+//             <router-link :to="{ name: 'aboutus' }"> aboutus</router-link>
+//           </li>
+//           <li>
+//             <router-link :to="{ name: 'starthere' }">starthere</router-link>
+//           </li>
+//         </ul>
+// </div>
 
-listNavbar :[
-    HOME:[
-        'MaxCoach Education',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-        'LOREM IPSUM',
-    ]
-]
+// listNavbar :[
+//     HOME:[
+//         'MaxCoach Education',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//         'LOREM IPSUM',
+//     ]
+// ];
