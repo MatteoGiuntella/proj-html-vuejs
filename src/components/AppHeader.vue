@@ -29,6 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/scss/main" as *;
+@use "../assets/scss/partials/variables.scss" as *;
 header{
     ul{
     list-style: none;
