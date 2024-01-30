@@ -25,6 +25,25 @@ export default {
                     name: "Graphic Design",
                     description: "Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness."
                 },
+            ],
+
+            widgetNumber:[
+                {
+                    data: 1926,
+                    info: "FINISHED SESSIONS"
+                },
+                {
+                    data: 3.092 + "+",
+                    info: "ENROLLED LEARNERS"
+                },
+                {
+                    data: 200,
+                    info: "ONLINE INSTRUCTORS"
+                },
+                {
+                    data: 100 + "%",
+                    info: "SATISFACTION RATE"
+                },
             ]
         };
     },
@@ -139,13 +158,34 @@ export default {
         <!-- SECTION 3 -->
         <section class="section_3">
             <div class="container">
-                
+                <div class="row little_container">
+                    <div class="col-3" v-for="(elem, i) in widgetNumber" :key="i">
+                        <div class="number_section_3">
+                            {{ elem.data }}
+                        </div>
+                        <div class="info_section_3">
+                            {{ elem.info }}
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
         <!-- SECTION 4 -->
         <section class="section_4">
             <div class="container">
-                
+                <div class=" text-center ">
+                    <div class="text-secondary-grey">CHOOSE WHERE YOU'D LIKE TO BEGIN</div>
+                    <span class="text-big-purple">Latest Featured </span>
+                    <span class="text-green">Courses</span>
+                </div>
+
+                <div class="card_service_container">
+                    <div class="row">
+                        <div class="col-4"></div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <!-- SECTION 5 -->
