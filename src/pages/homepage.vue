@@ -4,6 +4,7 @@ export default {
     data() {
         return {
             store,
+            activeTestimonial: 0,
             section1:[
                 {
                     url: "home-5-image-box-01.png",
@@ -140,10 +141,40 @@ export default {
                     month:"AUG",  
                 },
             ],
+
+            testimonial:[
+                {
+                    img:"testimonial-avata-02.jpg",
+                    description:"am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.",
+                    name:"MINA HOLLACE",
+                    profession:"Freelancer"
+                },
+                {
+                    img:"testimonial-avata-01.jpg",
+                    description:"MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+                    name:"MADLEY PONDOR",
+                    profession:"IT Specialist"
+                },
+                {
+                    img:"testimonial-avata-03.jpg",
+                    description:"I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+                    name:"LUVIC DUBBLE",
+                    profession:"Private Tutor"
+                },
+                {
+                    img:"testimonial-avata-04.jpg",
+                    description:"I'm a very strict person so I require everything to be organized and neat. MaxCoach guys just got me.",
+                    name:"FLORENCE THEMES",
+                    profession:"Multimedia Admin"
+                },
+                
+            ]
         };
     },
     methods: {
-
+        right(){
+            this.activeTestimonial++
+        }
     }
 }
 </script>
@@ -495,25 +526,31 @@ export default {
 
                 <!-- CAROSELLO -->
                 <div class="carousel_container">
-                    <div class="single_card_carousel">
-                        <div class="img_testimonial">
-                            <img src="/img/testimonial-avata-02.jpg" alt="">
+                    <div class="single_card_carousel" v-for="(elem, i) in testimonial">
+                        <div class="img_testimonial" 
+                        :class="activeTestimonial == i || 
+                                activeTestimonial + 1 == i + 1 ||
+                                activeTestimonialm + 2 == i + 2
+                                ? 'active' : '' ">
+                            <img :src="'/img/' + elem.img" alt="">
                         </div>
-                        <div>
+                        <div class="text-center">
                             <p class="color_purple">
-                                I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.
+                               {{ elem.description }}
                             </p>
+                            <div class="mb-3">
+                                <strong>{{elem.name}}</strong>
+                            </div>
+                            <div class="color_dark_gray mb-3 ">
+                                / {{elem.profession}}
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- bottoni carosello -->
                 <div class="text-center">
-                    <button>
-                        left
-                    </button>
-                    <button>
-                        right
-                    </button>
+                    <i @click="show24()" class="fa-solid fa-circle"></i>
                 </div>
             </div>
         </section>
