@@ -70,7 +70,7 @@ export default {
         </div>
 
         <div class="col-6 d-flex justify-content-end">
-          <div class="dropdown my-drop d-flex position-relative">
+          <div class="my-drop d-flex position-relative">
             <a
               class="btn dropdown-toggle"
               href="#"

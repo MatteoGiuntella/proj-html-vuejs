@@ -527,11 +527,7 @@ export default {
                 <!-- CAROSELLO -->
                 <div class="carousel_container">
                     <div class="single_card_carousel" v-for="(elem, i) in testimonial">
-                        <div class="img_testimonial" 
-                        :class="activeTestimonial == i || 
-                                activeTestimonial + 1 == i + 1 ||
-                                activeTestimonialm + 2 == i + 2
-                                ? 'active' : '' ">
+                        <div class="img_testimonial" >
                             <img :src="'/img/' + elem.img" alt="">
                         </div>
                         <div class="text-center">
