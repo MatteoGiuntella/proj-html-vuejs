@@ -127,7 +127,7 @@ export default {
                         </div>
                         <!-- ACCORDION -->
                         <div>
-                            
+                            ACCORDION
                         </div>
                     </div>
                 </div>
