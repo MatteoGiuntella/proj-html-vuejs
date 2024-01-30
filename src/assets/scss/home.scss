@@ -28,8 +28,10 @@ h1{
     color: $darkgray;
 }
 .color_green{
-    color: #20AD96;
-    
+    color: #20AD96;  
+}
+.color_purple{
+    color: $purple;  
 }
 //JUMBO
 .jumbo_container{
@@ -368,5 +370,25 @@ h1{
 }
 
 //carosello
+.carousel_container{
+    display: flex;
+    flex-wrap: wrap;
+    .single_card_carousel{
+        padding-top: 70px;
+        position: relative;
+        background-color: white;
+        width: calc(100% / 3);
+        
+        .img_testimonial{
+            position: absolute;
+            
+            width: 100px;
+            img{
+                border-radius: 50%;
+                width: 100%;
+            }
+        }
+    }
 
+}
 

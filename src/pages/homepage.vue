@@ -494,22 +494,27 @@ export default {
                 </div> 
 
                 <!-- CAROSELLO -->
-                <div class="carosel_container">
-                    <div>
-                        1
+                <div class="carousel_container">
+                    <div class="single_card_carousel">
+                        <div class="img_testimonial">
+                            <img src="/img/testimonial-avata-02.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="color_purple">
+                                I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        2
-                    </div>
-                    <div>
-                        3
-                    </div>
-                    <div>
-                        4
-                    </div>
-
                 </div>
-
+                <!-- bottoni carosello -->
+                <div class="text-center">
+                    <button>
+                        left
+                    </button>
+                    <button>
+                        right
+                    </button>
+                </div>
             </div>
         </section>
 

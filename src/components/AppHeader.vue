@@ -5,12 +5,23 @@ export default {
       navbar: [
         {
           title: "Home",
-          listOne: "ciao",
+          list: [
+            "ciao",
+            "ciao",
+            "ciao",
+            "ciao",
+            "ciao",
+
+          ],
             
         },
         {
           title: "Pages",
-      
+          list: [
+            "bau",
+            "bau",
+            "bau",
+          ],
         },
         {
           title: "Courses",
@@ -47,22 +58,24 @@ export default {
           />
         </div>
 
-        <div class="col-6 ">
-          <div class="dropdown d-flex justify-content-end ">
+        <div class="col-6 d-flex">
+          <div class="dropdown d-flex justify-content-end " v-for="(elem, i) in navbar">
             <a
               class="btn dropdown-toggle"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-              v-for="(elem, i) in navbar"
             >
               {{ elem.title }}
             </a>
 
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">ciao</a></li>
-              
+              <li v-for="(elem, j) in navbar[i].list" >
+                  <a class="dropdown-item" href="#">
+                    {{elem}}
+                  </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -115,6 +128,7 @@ export default {
           </div>
         </div>
       </div>
+      
     </div>
   </header>
 </template>
@@ -123,7 +137,7 @@ export default {
 @use "../assets/scss/main" as *;
 @use "../assets/scss/partials/variables.scss" as *;
 header {
-  height: 80px;
+ 
   width: 100%;
   background-color: $beige;
   .container {
