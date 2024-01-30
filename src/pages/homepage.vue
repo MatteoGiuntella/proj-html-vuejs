@@ -100,7 +100,46 @@ export default {
                     student: 51,
                     price: "$39.00"
                 },
-            ]
+            ],
+
+            events:[
+                {
+                    city: "Texas, US",
+                    info: "Storytelling Workshop",
+                    day: "27",
+                    month:"APR",  
+                },
+                {
+                    city: "New York, US",
+                    info: "Painting Art Contest 2020",
+                    day: "10",
+                    month:"OCT",  
+                },
+                {
+                    city: "Hamburg, Germany",
+                    info: "International Art Fair 2020",
+                    day: "23",
+                    month:"NOV",  
+                },
+                {
+                    city: "Illinois, US",
+                    info: "Street Performance: Call for Artist",
+                    day: "15",
+                    month:"DEC",  
+                },
+                {
+                    city: "Illinois. US",
+                    info: "Consumer Food Safety Education Conference",
+                    day: "22",
+                    month:"JUL",  
+                },
+                {
+                    city: "Dubai",
+                    info: "How meditation improve your mental health?",
+                    day: "12",
+                    month:"AUG",  
+                },
+            ],
         };
     },
     methods: {
@@ -393,19 +432,91 @@ export default {
                         <span class="text-green">Events</span>
                     </div>
                 </div>
-                
+                <div class="event_container">
+                    <div class="d-flex me-4 " v-for="(elem, i) in events">
+                        <div>
+                            <div class="color_dark_gray">
+                                    <i class="fa-solid fa-location-dot"></i>    
+                                    {{ elem.city }}
+                                </div>
+                                <div>
+                                    <strong>
+                                        {{ elem.info }}
+                                    </strong>
+                                </div>    
+                            </div>
+                            <div>
+                                <div class="text-green">
+                                    {{ elem.day }}
+                                </div>
+                                <div>
+                                    <strong>
+                                        {{ elem.month }}
+                                    </strong>
+                                </div>
+                                <div>
+                                    <button>
+                                        <a href="#">
+                                            Get ticket
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>    
+                    </div>    
+                </div>
+                <div class="text-center mt-5 ">
+                    <span class="color_dark_gray">
+                        Excited about our event? 
+                    </span>
+                    <span class="color_green">
+                        View all events
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
             </div>
         </section>
+
         <!-- SECTION 8 -->
         <section class="section_8">
             <div class="container">
-                
+                <div class="text-center">
+                    <span class="color_dark_gray">
+                        PEOPLE ARE PRAISING MAXCOACH
+                    </span>
+                    <div>
+                        <span class="text-big-purple">
+                            What make they
+                        </span>
+                        <span class="text-green">
+                            love us?
+                        </span>
+                    </div>
+                </div> 
+
+                <!-- CAROSELLO -->
+                <div class="carosel_container">
+                    <div>
+                        1
+                    </div>
+                    <div>
+                        2
+                    </div>
+                    <div>
+                        3
+                    </div>
+                    <div>
+                        4
+                    </div>
+
+                </div>
+
             </div>
         </section>
+
         <!-- SECTION 9 -->
         <section class="section_9">
             <div class="container">
-                
+               
             </div>
         </section>
     </div>
