@@ -1,7 +1,57 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      navbar: [
+        {
+          title: "Pages",
+          list: [
+            "Start here",
+            "Succes story",
+            "About me",
+            "About us 01",
+            "About us 02",
+            "About us 03",
+            "Contact me",
+            "Contact us",
+            "Paurchause Guide",
+            "Privacy Policy",
+            "Terms of Service",
+          ],
+        },
+        {
+          title: "Courses",
+          list: [
+            "Courses Grid 01",
+            "Courses Grid 02",
+            "Courses Grid 03",
+            "Membership Levels",
+            "Become a Teacher",
+            "Profile",
+            "Checkout",
+            "Single Layout",
+          ],
+        },
+        {
+          title: "Features",
+          list: ["Events", "Zoom meetings"],
+        },
+        {
+          title: "Blog",
+          list: ["Blog Grid", "Blog Masonry", "Blog Classic", "Blog List"],
+        },
+        {
+          title: "Shop",
+          list: [
+            "Shop left sidebar",
+            "Shop right sidebar",
+            "Cart",
+            "Whishlist",
+            "Single Product",
+          ],
+        },
+      ],
+    };
   },
   methods: {},
 };
@@ -9,72 +59,132 @@ export default {
 
 <template>
   <header>
-    <div class="container">
-      <nav>
-        <div class="navbar-container d-flex align-items-center ">
+    <div class="container position-relative">
+      <div class="row align-items-center p-3">
+        <div class="col-2">
+          <img
+            class="w-100"
+            src="../../public/img/dark-logo.png"
+            alt="dark-logo.png"
+          />
+        </div>
 
-          <div class="box-left-navbar">
-            <img src="../../public/img/dark-logo.png" alt="dark-logo.png"/>
+        <div class="col-6 d-flex justify-content-end">
+          <div class="dropdown my-drop d-flex position-relative">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <router-link :to="{ name: 'home' }"> Home</router-link>
+            </a>
           </div>
+          <div
+            class="dropdown d-flex justify-content-end"
+            v-for="(elem, i) in navbar"
+          >
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {{ elem.title }}
+            </a>
 
-          <div class="box-right-navbar d-flex align-items-center ">
-            <nav class="navbar navbar-expand-lg navbar ">
-              <div class="container-fluid">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavDarkDropdown"
-                  aria-controls="navbarNavDarkDropdown"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarNavDarkDropdown"
-                >
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <button
-                        class="btn dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Dropdown
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li>
-                          <a class="dropdown-item" href="#">Action</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-
-            <div class="item-box">
-              <item></item>
-              <item></item>
-            </div>
-
-            <div class="box-input">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
-            </div>
+            <ul class="dropdown-menu">
+              <li v-for="(elem, j) in navbar[i].list">
+                <a class="dropdown-item" href="#">
+                  {{ elem }}
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
+        <div class="col-4 item-box d-flex justify-content-around">
+          <span class="box-item-shop d-flex">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-cart-shopping fa-sm"></i>
+              </button>
+              <div class="dropdown-menu cart-box">
+                <div class="dropdown-item mb-5 text-center">
+                  <i
+                    class="fa-brands fa-opencart fa-2xl"
+                    style="color: #20ad96"
+                  ></i>
+                </div>
+                <h5 class="text-center mb-3">Your Cart is empty</h5>
+                <button class="dropdown-item my-button" type="button">
+                  Browse Shop
+                </button>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-user fa-sm"></i>
+              </button>
+            </div>
+          </span>
+
+          <div class="input-group flex-nowrap">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="search"
+              aria-describedby="addon-wrapping"
+            />
+            <span class="input-group-text" id="addon-wrapping">
+              <i class="fa-solid fa-magnifying-glass" style="color: #20ad96"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="hover-container">
+        <div class="d-flex justify-content-between "> 
+          <div class="d-flex">
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div class="mx-3">
+            <img
+              src="../../public/img/homepages-mega-menu-image-alt.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 </template>
@@ -83,24 +193,36 @@ export default {
 @use "../assets/scss/main" as *;
 @use "../assets/scss/partials/variables.scss" as *;
 header {
-  height: 80px;
   width: 100%;
   background-color: $beige;
-  .container{
-    nav{
-      .navbar-container{
-        .box-left-navbar{
-          width: 300px;
-          height: 70px;
-          .img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+  .container {
+    position: relative;
+    .hover-container {
+      background-color: $white;
+      width: 90%;
+      position: absolute;
+      left: 100px;
+      bottom: -280px;
+      z-index: 1;
+      display: none;
+    
+      ul {
+        list-style: none;
+        margin: 0;
+        li {
+          margin: 10px;
         }
-
+      }
+    }
+    .my-drop:hover .hover-container {
+        display: block;
       }
 
+    .box-left-navbar {
+      width: 150px;
+      img {
+        width: 100%;
+      }
     }
   }
 }

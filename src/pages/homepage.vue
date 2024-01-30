@@ -4,6 +4,7 @@ export default {
     data() {
         return {
             store,
+            activeTestimonial: 0,
             section1:[
                 {
                     url: "home-5-image-box-01.png",
@@ -80,7 +81,7 @@ export default {
                     service: "Open Programming Courses for Everyone: Python",
                     lessons: 17,
                     student: 66,
-                    price: "19.00"
+                    price: "$19.00"
                 },
                 {
                     imgService: "stock-full-hd-06-480x298.jpg",
@@ -100,11 +101,80 @@ export default {
                     student: 51,
                     price: "$39.00"
                 },
+            ],
+
+            events:[
+                {
+                    city: "Texas, US",
+                    info: "Storytelling Workshop",
+                    day: "27",
+                    month:"APR",  
+                },
+                {
+                    city: "New York, US",
+                    info: "Painting Art Contest 2020",
+                    day: "10",
+                    month:"OCT",  
+                },
+                {
+                    city: "Hamburg, Germany",
+                    info: "International Art Fair 2020",
+                    day: "23",
+                    month:"NOV",  
+                },
+                {
+                    city: "Illinois, US",
+                    info: "Street Performance: Call for Artist",
+                    day: "15",
+                    month:"DEC",  
+                },
+                {
+                    city: "Illinois. US",
+                    info: "Consumer Food Safety Education Conference",
+                    day: "22",
+                    month:"JUL",  
+                },
+                {
+                    city: "Dubai",
+                    info: "How meditation improve your mental health?",
+                    day: "12",
+                    month:"AUG",  
+                },
+            ],
+
+            testimonial:[
+                {
+                    img:"testimonial-avata-02.jpg",
+                    description:"am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.",
+                    name:"MINA HOLLACE",
+                    profession:"Freelancer"
+                },
+                {
+                    img:"testimonial-avata-01.jpg",
+                    description:"MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+                    name:"MADLEY PONDOR",
+                    profession:"IT Specialist"
+                },
+                {
+                    img:"testimonial-avata-03.jpg",
+                    description:"I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+                    name:"LUVIC DUBBLE",
+                    profession:"Private Tutor"
+                },
+                {
+                    img:"testimonial-avata-04.jpg",
+                    description:"I'm a very strict person so I require everything to be organized and neat. MaxCoach guys just got me.",
+                    name:"FLORENCE THEMES",
+                    profession:"Multimedia Admin"
+                },
+                
             ]
         };
     },
     methods: {
-
+        right(){
+            this.activeTestimonial++
+        }
     }
 }
 </script>
@@ -284,34 +354,211 @@ export default {
                 </div>
             </div>
         </section>
+
         <!-- SECTION 5 -->
         <section class="section_5">
             <div class="container">
-                
+                <div class="row">
+                    <div class="col-6">
+                        <div class="color_dark_gray mb-3">
+                            WHY HESITATE TO REGISTER?
+                        </div>
+                        <div>
+                            <span class="text-big-purple">Learn At Your <br> Own </span> 
+                            <span class="text-green">Pace</span>
+                        </div>
+                        <div>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                    <span class="color_dark_gray">
+                                        Select & customize courses to your preferences
+                                    </span>
+                                </li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                    <span class="color_dark_gray">
+                                        Change the tutor and make arrangements
+                                    </span>
+                                </li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                    <span class="color_dark_gray">
+                                        Participate in events to join others
+                                    </span>
+                                </li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                    <span class="color_dark_gray">
+                                        Get the desired certificate delivered at house
+                                    </span>
+                                </li>
+                            </ul>
+                            
+                            <div class=" mt-5">
+                                <button>
+                                    <a href="#">
+                                        <strong>Get started for free</strong>
+                                    </a>
+                                </button>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <img src="/img/home-5-image-01.png" alt="img not found">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
         <!-- SECTION 6 -->
-        <section class="section_6">
+        <section class="section_5">
             <div class="container">
-                
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <img src="/img/home-5-image-02.png" alt="img not found">
+                        </div>
+                    </div>
+                    <div class="col-6 pt-5 ">
+                        <div class="color_dark_gray mb-3">
+                            WHAT ARE YOU LOOKING FOR?
+                        </div>
+                        <div>
+                            <span class="text-big-purple">
+                                Learn on your
+                            </span> 
+
+                            <span class="text-green">mobile <br></span>
+                            <span class="text-big-purple">
+                                anytime!
+                            </span> 
+                        </div>
+                        <div>
+                           <p class="color_dark_gray">
+                                Save lessons for later and revise or write notes at any time and on multiple devices on your way. Never interfere with activities of enjoyment or other precious moments.
+                           </p>
+                            
+                            <div class="mt-5">
+                                <button>
+                                    <a href="#">
+                                        <strong>Download Our App</strong>
+                                    </a>
+                                </button>    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-        </section>  
+        </section> 
+        
         <!-- SECTION 7 -->
         <section class="section_7">
             <div class="container">
-                
+                <div class="text-center">
+                    <div class="color_dark_gray">
+                        GET IN CONTACT NOW
+                    </div>
+                    <div>
+                        <span class="text-big-purple">Upcoming</span>
+                        <span class="text-green">Events</span>
+                    </div>
+                </div>
+                <div class="event_container">
+                    <div class="d-flex me-4 " v-for="(elem, i) in events">
+                        <div>
+                            <div class="color_dark_gray">
+                                    <i class="fa-solid fa-location-dot"></i>    
+                                    {{ elem.city }}
+                                </div>
+                                <div>
+                                    <strong>
+                                        {{ elem.info }}
+                                    </strong>
+                                </div>    
+                            </div>
+                            <div>
+                                <div class="text-green">
+                                    {{ elem.day }}
+                                </div>
+                                <div>
+                                    <strong>
+                                        {{ elem.month }}
+                                    </strong>
+                                </div>
+                                <div>
+                                    <button>
+                                        <a href="#">
+                                            Get ticket
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>    
+                    </div>    
+                </div>
+                <div class="text-center mt-5 ">
+                    <span class="color_dark_gray">
+                        Excited about our event? 
+                    </span>
+                    <span class="color_green">
+                        View all events
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
             </div>
         </section>
+
         <!-- SECTION 8 -->
         <section class="section_8">
             <div class="container">
-                
+                <div class="text-center">
+                    <span class="color_dark_gray">
+                        PEOPLE ARE PRAISING MAXCOACH
+                    </span>
+                    <div>
+                        <span class="text-big-purple">
+                            What make they
+                        </span>
+                        <span class="text-green">
+                            love us?
+                        </span>
+                    </div>
+                </div> 
+
+                <!-- CAROSELLO -->
+                <div class="carousel_container">
+                    <div class="single_card_carousel" v-for="(elem, i) in testimonial">
+                        <div class="img_testimonial" 
+                        :class="activeTestimonial == i || 
+                                activeTestimonial + 1 == i + 1 ||
+                                activeTestimonialm + 2 == i + 2
+                                ? 'active' : '' ">
+                            <img :src="'/img/' + elem.img" alt="">
+                        </div>
+                        <div class="text-center">
+                            <p class="color_purple">
+                               {{ elem.description }}
+                            </p>
+                            <div class="mb-3">
+                                <strong>{{elem.name}}</strong>
+                            </div>
+                            <div class="color_dark_gray mb-3 ">
+                                / {{elem.profession}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bottoni carosello -->
+                <div class="text-center">
+                    <i @click="show24()" class="fa-solid fa-circle"></i>
+                </div>
             </div>
         </section>
+
         <!-- SECTION 9 -->
         <section class="section_9">
             <div class="container">
-                
+               
             </div>
         </section>
     </div>
