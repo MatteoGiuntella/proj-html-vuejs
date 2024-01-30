@@ -71,13 +71,7 @@ export default {
 
         <div class="col-6 d-flex justify-content-end">
           <div class="my-drop d-flex position-relative">
-            <a
-              class="btn dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="btn dropdown-toggle">
               <router-link :to="{ name: 'home' }"> Home</router-link>
             </a>
           </div>
@@ -205,7 +199,6 @@ header {
       bottom: -280px;
       z-index: 1;
       display: none;
-    
       ul {
         list-style: none;
         margin: 0;
@@ -214,7 +207,7 @@ header {
         }
       }
     }
-    .my-drop:hover .hover-container {
+    &:hover .hover-container{
         display: block;
       }
 
