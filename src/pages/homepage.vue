@@ -80,7 +80,7 @@ export default {
                     service: "Open Programming Courses for Everyone: Python",
                     lessons: 17,
                     student: 66,
-                    price: "19.00"
+                    price: "$19.00"
                 },
                 {
                     imgService: "stock-full-hd-06-480x298.jpg",
@@ -284,21 +284,115 @@ export default {
                 </div>
             </div>
         </section>
+
         <!-- SECTION 5 -->
         <section class="section_5">
             <div class="container">
-                
+                <div class="row">
+                    <div class="col-6">
+                        <div class="color_dark_gray mb-3">
+                            WHY HESITATE TO REGISTER?
+                        </div>
+                        <div>
+                            <span class="text-big-purple">Learn At Your <br> Own </span> 
+                            <span class="text-green">Pace</span>
+                        </div>
+                        <div>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                    <span class="color_dark_gray">
+                                        Select & customize courses to your preferences
+                                    </span>
+                                </li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                    <span class="color_dark_gray">
+                                        Change the tutor and make arrangements
+                                    </span>
+                                </li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                    <span class="color_dark_gray">
+                                        Participate in events to join others
+                                    </span>
+                                </li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                    <span class="color_dark_gray">
+                                        Get the desired certificate delivered at house
+                                    </span>
+                                </li>
+                            </ul>
+                            
+                            <div class=" mt-5">
+                                <button>
+                                    <a href="#">
+                                        <strong>Get started for free</strong>
+                                    </a>
+                                </button>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <img src="/img/home-5-image-01.png" alt="img not found">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
         <!-- SECTION 6 -->
-        <section class="section_6">
+        <section class="section_5">
             <div class="container">
-                
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <img src="/img/home-5-image-02.png" alt="img not found">
+                        </div>
+                    </div>
+                    <div class="col-6 pt-5 ">
+                        <div class="color_dark_gray mb-3">
+                            WHAT ARE YOU LOOKING FOR?
+                        </div>
+                        <div>
+                            <span class="text-big-purple">
+                                Learn on your
+                            </span> 
+
+                            <span class="text-green">mobile <br></span>
+                            <span class="text-big-purple">
+                                anytime!
+                            </span> 
+                        </div>
+                        <div>
+                           <p class="color_dark_gray">
+                                Save lessons for later and revise or write notes at any time and on multiple devices on your way. Never interfere with activities of enjoyment or other precious moments.
+                           </p>
+                            
+                            <div class="mt-5">
+                                <button>
+                                    <a href="#">
+                                        <strong>Download Our App</strong>
+                                    </a>
+                                </button>    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-        </section>  
+        </section> 
+        
         <!-- SECTION 7 -->
         <section class="section_7">
             <div class="container">
+                <div class="text-center">
+                    <div class="color_dark_gray">
+                        GET IN CONTACT NOW
+                    </div>
+                    <div>
+                        <span class="text-big-purple">Upcoming</span>
+                        <span class="text-green">Events</span>
+                    </div>
+                </div>
                 
             </div>
         </section>
