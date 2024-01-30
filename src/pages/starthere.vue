@@ -191,10 +191,17 @@ export default {
     <!-- FINE section-steps -->
 
     <div class="section-register">
-      <div class="container text-center">
-        <h2>
-          PROVA REGISTER
+      <div class="container text-center mt-5">
+        <p>
+          PROVA SUBTITLE SECTION STEPS
+        </p>
+        <h2 class="fw-bold mb-5">
+          PROVA SECTION STEPS
         </h2>
+
+        <button type="button" class="btn text-white fw-bold fs-6">
+          Large button
+        </button>
       </div>
     </div>
 

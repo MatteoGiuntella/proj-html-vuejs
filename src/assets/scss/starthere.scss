@@ -92,6 +92,17 @@
 
 .section-register {
     margin-top: 100px;
+
+    .container {
+        button {
+            background-color: $green;
+            padding: 15px 75px;
+
+            &:hover {
+                background-color: $purple;
+            }
+        }
+    }
 }
 
 
