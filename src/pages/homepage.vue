@@ -44,6 +44,62 @@ export default {
                     data: 100 + "%",
                     info: "SATISFACTION RATE"
                 },
+            ],
+            courses:[
+                {
+                    imgService: "course-02-480x298.jpg",
+                    nameOwner: "Owen Christ",
+                    imgOwner: "73ee246daf47502812ccefc84bf02898.jpeg",
+                    service: "Personal Finance: Financial Security Thinking & Principles",
+                    lessons: 2,
+                    student: 299,
+                    price: "Free"
+                },
+                {
+                    imgService: "course-02-480x298.jpg",
+                    nameOwner: "Blanche Fields",
+                    imgOwner: "73ee246daf47502812ccefc84bf02898.jpeg",
+                    service: "Learning to Write as a Professional Author",
+                    lessons: 20,
+                    student: 77,
+                    price: "$40.00"
+                },
+                {
+                    imgService: "stock-full-hd-03-480x298.jpg",
+                    nameOwner: "Maggie Strickland",
+                    imgOwner: "d0d504142acfde820eef2f11feea6253.jpeg",
+                    service: "Customer-centric Info-Tech Strategies",
+                    lessons: 24,
+                    student: 956,
+                    price: "Free"
+                },
+                {
+                    imgService: "stock-full-hd-04-480x298.jpg",
+                    nameOwner: "Maggie Strickland",
+                    imgOwner: "d0d504142acfde820eef2f11feea6253.jpeg",
+                    service: "Open Programming Courses for Everyone: Python",
+                    lessons: 17,
+                    student: 66,
+                    price: "19.00"
+                },
+                {
+                    imgService: "stock-full-hd-06-480x298.jpg",
+                    nameOwner: "Blanche Fields",
+                    imgOwner: "73ee246daf47502812ccefc84bf02898.jpeg",
+                    service: "Academic Listening and Note-taking",
+                    lessons: 14,
+                    student: 68,
+                    price: "$26.00"
+                },
+                {
+                    imgService: "course-featured-image-01-480x298.jpg",
+                    nameOwner: "Blanche Fields",
+                    imgOwner: "73ee246daf47502812ccefc84bf02898.jpeg",
+                    service: "Master jQuery in a Short Period of Time",
+                    lessons: 6,
+                    student: 51,
+                    price: "$39.00"
+                },
             ]
         };
     },
@@ -174,7 +230,7 @@ export default {
         <!-- SECTION 4 -->
         <section class="section_4">
             <div class="container">
-                <div class=" text-center ">
+                <div class=" text-center info_section_4 mb-4">
                     <div class="text-secondary-grey">CHOOSE WHERE YOU'D LIKE TO BEGIN</div>
                     <span class="text-big-purple">Latest Featured </span>
                     <span class="text-green">Courses</span>
@@ -182,7 +238,47 @@ export default {
 
                 <div class="card_service_container">
                     <div class="row">
-                        <div class="col-4"></div>
+                        <div class="col-4 mb-4 d-flex" v-for="(course, i) in courses" :key="i">
+                            <div class="card w-100 position-relative ">
+                                <img :src="'/img/' + course.imgService"  class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="img_person">
+                                            <img :src="'/img/' + course.imgOwner" alt="img">
+                                        </div>
+                                        <div class="name_card">
+                                            {{course.nameOwner}}
+                                        </div>
+                                    </div>
+                                    <p class="card-text">
+                                        <strong>
+                                            {{course.service}}
+                                        </strong>
+                                    </p>
+                                    <div class="d-flex color_dark_gray">
+                                        <div class=" me-3 ">
+                                            <i class="fa-regular fa-file-lines"></i>
+                                            Lessons 
+                                        </div>
+                                        <div>
+                                            <i class="fa-regular fa-user"></i>
+                                            {{course.student}} student
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_card_container">
+                                    {{course.price}}
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class=" text-center ">
+                        <button>
+                            <a href="#">
+                                View all courses 
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </button>    
                     </div>
 
                 </div>

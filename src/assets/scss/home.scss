@@ -23,6 +23,10 @@ h1{
     font-size: 2.7em;
     font-weight: 300;
 }
+
+.color_dark_gray{
+    color: $darkgray;
+}
 //JUMBO
 .jumbo_container{
     background-color: $beige;
@@ -62,6 +66,7 @@ h1{
                 background-color: $green;
                 padding: 10px 25px;
                 border: none;
+                color: white;
             }
         }
         
@@ -167,7 +172,7 @@ h1{
 //SECTION 3
 .section_3{
     margin-top: 50px;
-    margin-bottom: 50px;
+  
     padding: 50px;
     background-color: $beige;
     
@@ -196,3 +201,71 @@ h1{
 }
 
 //SECTION 4
+.section_4{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $lightbeige;
+    
+    button{
+        background-color: $green;
+        padding: 10px 25px;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        padding: 6px 20px;
+       
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 0.8em;
+
+            i{
+               
+                margin-left: 5px;
+            }
+        }
+    } 
+}
+
+.card{
+    overflow: hidden;
+    .card-body{
+        .img_person{
+            
+            img{
+                border-radius: 50%;
+                display: block;
+            }
+        }
+        .card-text{
+            line-height: 30px;
+        }
+        .name_card{
+            margin-left: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $darkgray;
+        }
+    
+        
+    }
+    
+    .price_card_container{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: $green;
+        color: white;
+        padding: 7px;
+        font-weight: 600;
+        border-bottom-left-radius: 7px;
+    }
+    
+
+}
+
+
