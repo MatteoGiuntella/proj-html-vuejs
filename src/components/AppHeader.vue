@@ -5,117 +5,28 @@ export default {
       navbar: [
         {
           title: "Home",
-          listOne: [
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-          ],
-          listTwo: [
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-          ],
+          listOne: "ciao",
+            
         },
         {
           title: "Pages",
-          listOne: [
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-          ],
+      
         },
         {
           title: "Courses",
-          listOne: [
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-          ],
+      
         },
         {
           title: "Features",
-          listOne: [
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-          ],
+        
         },
         {
           title: "Blog",
-          listOne: [
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-          ],
+         
         },
         {
           title: "Shop",
-          listOne: [
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-            "lorem",
-          ],
+       
         },
       ],
     };
@@ -136,8 +47,24 @@ export default {
           />
         </div>
 
-        <div class="col-6">
-          
+        <div class="col-6 ">
+          <div class="dropdown d-flex justify-content-end ">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              v-for="(elem, i) in navbar"
+            >
+              {{ elem.title }}
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">ciao</a></li>
+              
+            </ul>
+          </div>
         </div>
         <div class="col-4 item-box d-flex justify-content-around">
           <span class="box-item-shop d-flex">
@@ -205,33 +132,6 @@ header {
       img {
         width: 100%;
       }
-    }
-    .box-right-navbar {
-      ul {
-        list-style: none;
-        margin: 0;
-        li {
-          margin-right: 10px;
-        }
-      }
-      // .item-box {
-      //   .box-item-shop {
-      //     .cart-box {
-      //       width: 250px;
-      //       height: 250px;
-      //       border: 0px solid $white;
-      //       padding: 50px;
-
-      //       .my-button {
-      //         width: 100%;
-      //         background-color: $green;
-      //         border: 1px solid;
-      //         text-align: center;
-
-      //       }
-      //     }
-      //   }
-      // }
     }
   }
 }
