@@ -70,8 +70,8 @@ export default {
         </div>
 
         <div class="col-6 d-flex justify-content-end">
-          <div class="my-drop d-flex position-relative">
-            <a class="btn dropdown-toggle">
+          <div class=" d-flex position-relative">
+            <a class="btn dropdown-toggle my-drop">
               <router-link :to="{ name: 'home' }"> Home</router-link>
             </a>
           </div>
@@ -91,8 +91,9 @@ export default {
 
             <ul class="dropdown-menu">
               <li v-for="(elem, j) in navbar[i].list">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="">
                   {{ elem }}
+                  
                 </a>
               </li>
             </ul>
