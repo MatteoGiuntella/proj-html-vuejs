@@ -1,14 +1,50 @@
 <script>
 import {store} from '../store.js'
 export default {
-    data() {
-        return {
-          store
-        };
-    },
-    methods: {
-
-    }
+  data() {
+    return {
+      store,
+      footerLeftNavs: [
+        {
+          title: "Address",
+          list: [
+            '382 NE 191st St # 87394 Miami, FL 33179-3899',
+            '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
+            'support@maxcoach.com',
+          ]
+        },
+      ],
+      footerRightNavs:[
+        {
+          title: "Explore",
+          list: [
+            'Start here',
+            'Blog',
+            'About us'
+          ],
+        },
+        {
+          title: "",
+          list: [
+            'Success story',
+            'Courses',
+            'Contact us'
+          ],
+        },
+        {
+          title: "Information",
+          list: [
+            'Membership',
+            'Purchase guide',
+            'Privacy policy',
+            'Terms of services'
+          ],
+        },
+      ]
+    };
+  },
+  methods: {
+  }
 }
 </script>
 
@@ -16,17 +52,20 @@ export default {
   <main>
     <div class="section-array">
       <div class="container-img text-white">
+        
       </div>
+      
     </div>
     <!-- FINE section-array -->
+    
 
     <div class="container">
       <div class="section-steps text-center mt-5">
         <p>
-          PROVA SUBTITLE SECTION STEPS
+          FOUR MAJOR STEPS TO SUCCESS
         </p>
         <h2 class="fw-bold mb-5">
-          PROVA SECTION STEPS
+          Best chances for expanding your success to the max
         </h2>
 
         <div class="section-broadening">
@@ -36,9 +75,9 @@ export default {
             <div class="col ">
               <div class="row">
                 <div class="col-6 p-5 border-middle ">
-                  <div class="prova-container position-relative w-100 ">
+                  <div class=" position-relative w-100 ">
                     <h3 class="fw-bold d-flex justify-content-end ">
-                      PROVA img
+                      BROADENING
                     </h3>
                     <div class="timeline-dot-right">
                       <div class="timeline-all-dot-right">
@@ -53,11 +92,10 @@ export default {
                 <div class="col-6 p-5  position-relative">
                   <div class="container-text text-start">
                     <h4 class="fw-bold">
-                      PROVA
+                      #1 Career advancement and hobbies
                     </h4>
-                    <p class="mt-4 ">
-                      Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quia excepturi quod, aliquid id eaque dignissimos quos mollitia totam saepe. sit amet, consectetur adipisicing elit. Perferendis distinctio error id. Voluptatibus nisi eveniet consequuntur itaque odio similique fugiat quia, architecto corrupti nihil laboriosam eius eum sed consectetur minus delectus reiciendis id amet consequatur? Magnam, porro neque id repudiandae qui laudantium voluptates sunt ipsum dolorum a, itaque harum sapiente.
-                    </p>
+                    <p class="mt-4 fs-5 ">
+                      Studying online gives you more flexibility. You can work and fit your work schedule around your coursework more easily; even more so if you are taking an asynchronous class: an online class where you can study and interact with your instructor and fellow classmates at your own pace.                    </p>
                   </div>
                 </div>
                 <!-- FINE col -->
@@ -75,18 +113,17 @@ export default {
                 <div class="col-6 border-middle p-5 position-relative">
                   <div class="container-text text-end">
                     <h4 class="fw-bold">
-                      PROVA
+                      #2 Flexible schedule & environment
                     </h4>
-                    <p class="mt-4 ">
-                      Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quia excepturi quod, aliquid id eaque dignissimos quos mollitia totam saepe. sit amet, consectetur adipisicing elit. Perferendis distinctio error id. Voluptatibus nisi eveniet consequuntur itaque odio similique fugiat quia, architecto corrupti nihil laboriosam eius eum sed consectetur minus delectus reiciendis id amet consequatur? Magnam, porro neque id repudiandae qui laudantium voluptates sunt ipsum dolorum a, itaque harum sapiente.
-                    </p>
+                    <p class="mt-4 fs-5">
+                      Taking an online course also means that you don’t have to commute to class, which means less time spent on the bus and more study time sitting on your couch, the sound of a crackling fireplace in the background. You no longer have to worry about missing an important class!                    </p>
                   </div>
                 </div>
                 <!-- FINE col -->
                 <div class="col-6 p-5 ">
                   <div class="prova-container position-relative w-100 ">
                     <h3 class="fw-bold d-flex justify-content-start ">
-                      PROVA img
+                      SCHEDULING
                     </h3>
                     <div class="timeline-dot-left">
                       <div class="timeline-all-dot-left">
@@ -113,7 +150,7 @@ export default {
                 <div class="col-6 p-5 border-middle ">
                   <div class="prova-container position-relative w-100 ">
                     <h3 class="fw-bold d-flex justify-content-end ">
-                      PROVA img
+                      SELF-DISCIPLINE
                     </h3>
                     <div class="timeline-dot-right">
                       <div class="timeline-all-dot-right">
@@ -129,11 +166,10 @@ export default {
                   <div class="container-text text-start">
                     
                     <h4 class="fw-bold">
-                      PROVA
+                      #3 Self-discipline & responsibility
                     </h4>
-                    <p class="mt-4 ">
-                      Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quia excepturi quod, aliquid id eaque dignissimos quos mollitia totam saepe. sit amet, consectetur adipisicing elit. Perferendis distinctio error id. Voluptatibus nisi eveniet consequuntur itaque odio similique fugiat quia, architecto corrupti nihil laboriosam eius eum sed consectetur minus delectus reiciendis id amet consequatur? Magnam, porro neque id repudiandae qui laudantium voluptates sunt ipsum dolorum a, itaque harum sapiente.
-                    </p>
+                    <p class="mt-4 fs-5">
+                      Who says that having to be more self-disciplined is a disadvantage? It is true that studying online requires more time-management skills, because you will spend a lot of time on your own without someone physically close to keep you focused on deadlines.                     </p>
                   </div>
                 </div>
                 <!-- FINE col -->
@@ -151,18 +187,17 @@ export default {
                 <div class="col-6 border-middle p-5 position-relative">
                   <div class="container-text text-end">
                     <h4 class="fw-bold">
-                      PROVA
+                      #4 Smart investment into future
                     </h4>
-                    <p class="mt-4 ">
-                      Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quia excepturi quod, aliquid id eaque dignissimos quos mollitia totam saepe. sit amet, consectetur adipisicing elit. Perferendis distinctio error id. Voluptatibus nisi eveniet consequuntur itaque odio similique fugiat quia, architecto corrupti nihil laboriosam eius eum sed consectetur minus delectus reiciendis id amet consequatur? Magnam, porro neque id repudiandae qui laudantium voluptates sunt ipsum dolorum a, itaque harum sapiente.
-                    </p>
+                    <p class="mt-4 fs-5">
+                      Studying online means that you pay the tuition fee, possibly book supplies, an online application fee, and few other items. You don’t, however, incur the costs of housing (which can range up to $12,000 per year) and transportation, which translates to lower debts and more savings.                    </p>
                   </div>
                 </div>
                 <!-- FINE col -->
                 <div class="col-6 p-5 ">
                   <div class="prova-container position-relative w-100 ">
                     <h3 class="fw-bold d-flex justify-content-start ">
-                      PROVA img
+                      INVESTMENT
                     </h3>
                     <div class="timeline-dot-left">
                       <div class="timeline-all-dot-left">
@@ -209,28 +244,93 @@ export default {
           <div class="col-5 img-container">
             <img src="../../public/img/stock-full-hd-05-480x298.jpg" alt="">
             <div class="overlay text-center text-white ">
-              <p class="text">
-                pane
-              </p>
+              <div class="text">
+                <h3 class="fw-bold fs-1">
+                  Lonnie Marks
+                </h3>
+                <p>
+                  Tutor
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-7">
+          <div class="col-7 img-container">
             <img src="../../public/img/stock-full-hd-03-480x298.jpg" alt="">
+            <div class="overlay text-center text-white ">
+              <div class="text">
+                <h3 class="fw-bold fs-1">
+                  Britney Salker
+                </h3>
+                <p>
+                  Educator
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-8">
+          <div class="col-8 img-container">
             <img src="../../public/img/stock-full-hd-04-480x298.jpg" alt="">
+            <div class="overlay text-center text-white ">
+              <div class="text">
+                <h3 class="fw-bold fs-1">
+                  Bronnies Wallz
+                </h3>
+                <p>
+                  Alumnis 
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 img-container">
             <img src="../../public/img/testimonial-avata-02.jpg" alt="">
+            <div class="overlay text-center text-white ">
+              <div class="text">
+                <h3 class="fw-bold fs-1">
+                  Mia Paulo
+                </h3>
+                <p>
+                  Writer
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 img-container">
             <img src="../../public/img/stock-full-hd-06-480x298.jpg" alt="">
+            <div class="overlay text-center text-white ">
+              <div class="text">
+                <h3 class="fw-bold fs-1">
+                  Lina Esthers
+                </h3>
+                <p>
+                  Author
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 img-container">
             <img src="../../public/img/stock-full-hd-05-480x298.jpg" alt="">
+            <div class="overlay text-center text-white ">
+              <div class="text">
+                <h3 class="fw-bold fs-1">
+                  Lorean McPhils
+                </h3>
+                <p>
+                  Designer
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 img-container">
             <img src="../../public/img/testimonial-avata-01.jpg" alt="">
+            <div class="overlay text-center text-white ">
+              <div class="text">
+                <h3 class="fw-bold fs-1">
+                  Anna Muray
+                </h3>
+                <p>
+                  Writer
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -337,19 +437,13 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <div class="list-container">
+          <div class="list-container" v-for="(footerLeftNav, i) in footerLeftNavs">
             <div class="fw-bold fs-5">
-              Address
+              {{ footerLeftNav.title }}
             </div>
             <ul>
-              <li>
-                Link
-              </li>
-              <li>
-                Link
-              </li>
-              <li>
-                Link
+              <li  v-for="(listOne, j) in footerLeftNav.list">
+                {{ listOne}}
               </li>
             </ul>
           </div>
@@ -358,66 +452,39 @@ export default {
           <div class="social-container">
             <ul>
               <li>
-                <i class="link-icon fab fa-facebook-square"></i>
+                <a href="#">
+                  <i class="link-icon fab fa-facebook-square"></i>
+                </a>
               </li>
               <li>
-                <i class="link-icon fab fa-twitter"></i>
+                <a href="#">
+                  <i class="link-icon fab fa-twitter"></i>
+                </a>
               </li>
               <li>
-                <i class="link-icon fab fa-instagram"></i>
+                <a href="#">
+                  <i class="link-icon fab fa-instagram"></i>
+                </a>
               </li>
               <li>
-                <i class="link-icon fab fa-linkedin"></i>
+                <a href="#">
+                  <i class="link-icon fab fa-linkedin"></i>
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <!-- FINE col -->
         <div class="col-6 d-flex ">
-          <div class="list-container">
+          <div class="list-container" v-for="(footerRightNav, i) in footerRightNavs">
             <div class="fw-bold fs-5">
-              Address
+              {{ footerRightNav.title }}
             </div>
             <ul>
-              <li>
-                <a href="#">Link</a>
-              </li>
-              <li>
-                <a href="#">Link</a>
-              </li>
-              <li>
-                <a href="#">Link</a>
-              </li>
-            </ul>
-          </div>
-          <!-- FINE list-container -->
-          <div class="list-container">
-            <ul>
-              <li>
-                <a href="#">Link</a>
-              </li>
-              <li>
-                <a href="#">Link</a>
-              </li>
-              <li>
-                <a href="#">Link</a>
-              </li>
-            </ul>
-          </div>
-          <!-- FINE list-container -->
-          <div class="list-container">
-            <div class="fw-bold fs-5">
-              Address
-            </div>
-            <ul>
-              <li>
-                <a href="#">Link</a>
-              </li>
-              <li>
-                <a href="#">Link</a>
-              </li>
-              <li>
-                <a href="#">Link</a>
+              <li v-for="(listOne, j) in footerRightNav.list">
+                <a href="#">
+                  {{ listOne}}
+                </a>
               </li>
             </ul>
           </div>
@@ -429,7 +496,7 @@ export default {
       <div class="row">
         <div class="col text-center mt-5">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati.
+            © 2020 Maxcoach. All Rights Reserved
           </p>
         </div>
       </div>

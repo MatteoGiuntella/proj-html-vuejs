@@ -41,6 +41,9 @@ img {
 }
 
 .section-broadening {
+    h3 {
+        color: $green;
+    }
 
     .border-middle {
         border-right: 2px solid #e2e2e8;
@@ -180,6 +183,10 @@ img {
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             transition: 2s ease-in-out;
+
+            &:last-of-type {
+                font-size: 1.2rem;
+            }
         }
 
         
