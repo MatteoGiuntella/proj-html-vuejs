@@ -177,6 +177,9 @@ export default {
         }
     }
 }
+
+//ACCORDION CUSTOMAZE
+
 </script>
 
 <template>
@@ -270,10 +273,50 @@ export default {
                             <span>Stunning </span> <br>
                             <span>Career Perspective</span>
                         </div>
+                        
                         <!-- ACCORDION -->
-                        <div>
-                            ACCORDION
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Multiple Platforms Supported for Teaching & Studying
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span class="color_dark_gray">
+                                        MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device.
+                                    </span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Multiple Course Participation at the Same Time
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Study for a number of courses at the same time is possible as long as you can afford the fee and time for completing them in the proper time. Learn at your own desired timeline and timetable. Maximum up to 5 course at a time for a learner at MaxCoach.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Track Study Progress & Deliver Prompt Feedback
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    It's not just a normal thing to be able to build such a solid online educational system like MaxCoach where your progress is easily tracked and feedback is properly delivered. We promise to keep improving our system for better stability and flexibility.
+                                </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Fine accordion -->
                     </div>
                 </div>
             </div>
@@ -470,22 +513,22 @@ export default {
                                     <i class="fa-solid fa-location-dot"></i>    
                                     {{ elem.city }}
                                 </div>
-                                <div>
+                                <div class="mt-3">
                                     <strong>
                                         {{ elem.info }}
                                     </strong>
                                 </div>    
                             </div>
                             <div>
-                                <div class="text-green">
+                                <div class="text-green d-flex justify-content-center ">
                                     {{ elem.day }}
                                 </div>
                                 <div>
-                                    <strong>
+                                    <strong class="d-flex justify-content-center ">
                                         {{ elem.month }}
                                     </strong>
                                 </div>
-                                <div>
+                                <div class="mt-1">
                                     <button>
                                         <a href="#">
                                             Get ticket

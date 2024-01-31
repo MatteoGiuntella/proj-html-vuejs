@@ -164,7 +164,22 @@ h1{
             font-weight: 300;
         }
     }
-    
+    //accordion
+    .accordion-button:not(.collapsed){
+        background-color: $green;
+        color: white;
+        box-shadow: none;
+    }
+
+    .accordion-button.collapsed::after {
+        background: url("/img/plus.svg");
+        background-size: contain;
+      }
+      
+      .accordion-button:not(.collapsed)::after {
+        background: url("/img/minus.png");
+        background-size: contain;
+      }
 }
 .img_container_section2{
     display: flex;
