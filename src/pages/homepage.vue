@@ -206,10 +206,10 @@ export default {
 </script>
 
 <template>
-    <div class="homePage_container">
+    <div class="homePage_container pt-5 ">
 
         <!-- JUMBO -->
-        <div class="jumbo_container">
+        <div class="jumbo_container ">
             <div class="container">
                 <div class=" row p-4 ">
                     <div class="col-6 left_jumbo_container">

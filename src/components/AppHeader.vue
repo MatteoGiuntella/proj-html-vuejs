@@ -191,7 +191,8 @@ export default {
 @use "../assets/scss/partials/variables.scss" as *;
 header {
   width: 100%;
-  background-color: $beige;
+  background-color: rgba(245, 241, 237, 0.9);
+  z-index: 2;
   .container {
     position: relative;
     .hover-container {
