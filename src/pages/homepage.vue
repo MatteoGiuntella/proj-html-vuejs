@@ -196,35 +196,7 @@ export default {
       };
     },
     methods: {
-        changeOrder0(){
-            this.testimonial[0].id = 0;
-            this.testimonial[1].id = 1;
-            this.testimonial[2].id = 2;
-            this.testimonial[3].id = 3;
-            console.log("Cliccato 0", this.testimonial);
-        },
-        changeOrder1(){
-            this.testimonial[0].id = 3;
-            this.testimonial[1].id = 0;
-            this.testimonial[2].id = 1;
-            this.testimonial[3].id = 2;
-            console.log("Cliccato 1", this.testimonial);
-        },
-        changeOrder2(){
-            this.testimonial[0].id = 2;
-            this.testimonial[1].id = 3;
-            this.testimonial[2].id = 0;
-            this.testimonial[3].id = 1;
-            console.log("Cliccato 2", this.testimonial);
-        },
-        changeOrder3(){
-            this.testimonial[0].id = 1;
-            this.testimonial[1].id = 2;
-            this.testimonial[2].id = 3;
-            this.testimonial[3].id = 0;
-            console.log("Cliccato 3", this.testimonial);
-        },
-
+    
     }
 }
 
@@ -379,6 +351,7 @@ export default {
                 </div>
             </div>
         </section>
+
 
         <!-- SECTION 5 -->
         <section class="section_5">

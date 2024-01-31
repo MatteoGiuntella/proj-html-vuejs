@@ -110,6 +110,10 @@ export default {
 .img_container_section2{
     display: flex;
     justify-content: center;
+    background-image: url("/img/underlay-shape-lilla.svg");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center;
     img{
         display: block;
     }
