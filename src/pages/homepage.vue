@@ -2,6 +2,8 @@
 import {store} from '../store.js'
 import component2 from '../components/components home page/component2.vue';
 import component3 from '../components/components home page/component3.vue';
+import offcanvas from '../components/components home page/offcanvas.vue';
+
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 // Import Swiper styles
@@ -181,7 +183,8 @@ export default {
                     id: 0
                 },
                 
-            ]
+            ],
+            
         };
     },
     components: {
@@ -189,6 +192,7 @@ export default {
         component3,
         Swiper,
         SwiperSlide,
+        offcanvas
     },
     setup() {
       return {
@@ -207,7 +211,9 @@ export default {
 
 <template>
     <div class="homePage_container pt-5 ">
-
+        <!-- OFFCANVAS -->
+        <offcanvas/>
+        
         <!-- JUMBO -->
         <div class="jumbo_container ">
             <div class="container">
