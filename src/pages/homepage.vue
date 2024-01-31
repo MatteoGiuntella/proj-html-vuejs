@@ -4,7 +4,6 @@ export default {
     data() {
         return {
             store,
-            activeTestimonial: 0,
             section1:[
                 {
                     url: "home-5-image-box-01.png",
@@ -147,38 +146,69 @@ export default {
                     img:"testimonial-avata-02.jpg",
                     description:"am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.",
                     name:"MINA HOLLACE",
-                    profession:"Freelancer"
+                    profession:"Freelancer",
+                    id: 0
                 },
                 {
                     img:"testimonial-avata-01.jpg",
                     description:"MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
                     name:"MADLEY PONDOR",
-                    profession:"IT Specialist"
+                    profession:"IT Specialist",
+                    id: 0
                 },
                 {
                     img:"testimonial-avata-03.jpg",
                     description:"I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
                     name:"LUVIC DUBBLE",
-                    profession:"Private Tutor"
+                    profession:"Private Tutor",
+                    id: 0
                 },
                 {
                     img:"testimonial-avata-04.jpg",
                     description:"I'm a very strict person so I require everything to be organized and neat. MaxCoach guys just got me.",
                     name:"FLORENCE THEMES",
-                    profession:"Multimedia Admin"
+                    profession:"Multimedia Admin",
+                    id: 0
                 },
                 
             ]
         };
     },
     methods: {
-        right(){
-            this.activeTestimonial++
-        }
+        changeOrder0(){
+            this.testimonial[0].id = 1;
+            this.testimonial[1].id = 2;
+            this.testimonial[2].id = 3;
+            this.testimonial[3].id = 4;
+            console.log("Cliccato 0", this.testimonial);
+        },
+        changeOrder1(){
+            this.testimonial[0].id = 4;
+            this.testimonial[1].id = 1;
+            this.testimonial[2].id = 2;
+            this.testimonial[3].id = 3;
+            console.log("Cliccato 1", this.testimonial);
+        },
+        changeOrder2(){
+            this.testimonial[0].id = 3;
+            this.testimonial[1].id = 4;
+            this.testimonial[2].id = 1;
+            this.testimonial[3].id = 2;
+            console.log("Cliccato 2", this.testimonial);
+        },
+        changeOrder3(){
+            this.testimonial[0].id = 2;
+            this.testimonial[1].id = 3;
+            this.testimonial[2].id = 4;
+            this.testimonial[3].id = 1;
+            console.log("Cliccato 3", this.testimonial);
+        },
+
     }
 }
 
-//ACCORDION CUSTOMAZE
+//carosello
+
 
 </script>
 
@@ -569,8 +599,8 @@ export default {
 
                 <!-- CAROSELLO -->
                 <div class="carousel_container">
-                    <div class="single_card_carousel" v-for="(elem, i) in testimonial">
-                        <div class="img_testimonial" >
+                    <div class="single_card_carousel" v-for="(elem, i) in testimonial" :class="'order_'+ elem.id">
+                        <div class="img_testimonial">
                             <img :src="'/img/' + elem.img" alt="">
                         </div>
                         <div class="text-center">
@@ -588,18 +618,16 @@ export default {
                 </div>
 
                 <!-- bottoni carosello -->
-                <div class="text-center">
-                    <i @click="show24()" class="fa-solid fa-circle"></i>
+                <div class="text-center button_carousel">
+                    <i @click="changeOrder0()" class="fa-solid fa-circle"></i>
+                    <i @click="changeOrder1()" class="fa-solid fa-circle"></i>
+                    <i @click="changeOrder2()" class="fa-solid fa-circle"></i>
+                    <i @click="changeOrder3()" class="fa-solid fa-circle"></i>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 9 -->
-        <section class="section_9">
-            <div class="container">
-               
-            </div>
-        </section>
+   
     </div>
    
 </template>
