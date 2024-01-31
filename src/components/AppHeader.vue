@@ -58,8 +58,8 @@ export default {
 </script>
 
 <template>
-  <header>
-    <router-link :to="{ name: 'aboutus' }"> aboutus</router-link>
+  <header class=" position-fixed">
+
     <div class="container position-relative">
       <div class="row align-items-center p-3">
         <div class="col-2">

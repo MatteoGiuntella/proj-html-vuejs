@@ -215,7 +215,34 @@ export default {
     <div class="row">
        
         <div class="col-6">
-            
+            <div class="cart">
+                <div class="mb-3">
+                    <h2><i class="fa-regular fa-flag fa-2xl" style="color: #000000;"></i></h2>
+                </div>
+                <h5>Life Mentoring</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis voluptatum delectus, quidem neque </p>
+            </div>
+            <div class="cart my-3 ">
+                <div class="mb-3">
+                    <h2><i class="fa-solid fa-hammer fa-2xl" style="color: #000000;"></i></h2>
+                </div>
+                <h5>Self Development</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis voluptatum delectus, quidem neque </p>
+            </div>
+            <div class="cart my-3 ">
+                <div class="mb-3">
+                    <h2><i class="fa-solid fa-anchor fa-2xl" style="color: #000000;"></i></h2>
+                </div>
+                <h5>Ask Consulantancy</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis voluptatum delectus, quidem neque </p>
+            </div>
+            <div class="cart my-3 ">
+                <div class="mb-3">
+                    <h2><i class="fa-solid fa-display fa-2xl" style="color: #000000;"></i></h2>
+                </div>
+                <h5>Remote Learning</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis voluptatum delectus, quidem neque </p>
+            </div>
         </div>
         <div class="col-6">
            <div class="bg-box">     
@@ -292,7 +319,7 @@ section {
 .bg-box{
     height: 600px;
     img{
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
         height: 100%;
         display: block;
