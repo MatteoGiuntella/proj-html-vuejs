@@ -152,41 +152,6 @@ h1{
 .section_2{
     margin-top: 50px;
     margin-bottom: 50px;
-    .text-information-container{
-        span:first-of-type, span:last-of-type{
-            color: $purple;
-            font-size: 2.7em;
-            font-weight: 600;
-        }
-        span:nth-of-type(2) {
-            color: $green;
-            font-size: 2.7em;
-            font-weight: 300;
-        }
-    }
-    //accordion
-    .accordion-button:not(.collapsed){
-        background-color: $green;
-        color: white;
-        box-shadow: none;
-    }
-
-    .accordion-button.collapsed::after {
-        background: url("/img/plus.svg");
-        background-size: contain;
-      }
-      
-      .accordion-button:not(.collapsed)::after {
-        background: url("/img/minus.png");
-        background-size: contain;
-      }
-}
-.img_container_section2{
-    display: flex;
-    justify-content: center;
-    img{
-        display: block;
-    }
 }
 
 
@@ -196,29 +161,7 @@ h1{
   
     padding: 50px;
     background-color: $beige;
-    
-    .little_container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 900px;
-        margin: 0 auto;
-        .number_section_3{
-            display: flex;
-            justify-content: center;
-            color: $green;
-            font-size: 2.7em;
-            font-weight: 600;
-        }
-        .info_section_3{
-            display: flex;
-            justify-content: center;
-            color: $purple;
-        }
-    
-    }
-    
-    
+        
 }
 
 //SECTION 4
