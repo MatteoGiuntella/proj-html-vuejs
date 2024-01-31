@@ -305,7 +305,7 @@ export default {
           Take your interest and register an online class today to enjoy life fully        </h2>
 
         <button type="button" class="btn text-white fw-bold fs-6">
-          Large button
+          Get started for free
         </button>
       </div>
       <!-- FINE container button-->
