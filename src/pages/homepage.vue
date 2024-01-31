@@ -479,7 +479,7 @@ export default {
                     </div>
                 </div>
                 <div class="event_container">
-                    <div class="d-flex me-4 " v-for="(elem, i) in events">
+                    <div class="d-flex me-4 single_event_container" v-for="(elem, i) in events">
                         <div>
                             <div class="color_dark_gray">
                                     <i class="fa-solid fa-location-dot"></i>    
