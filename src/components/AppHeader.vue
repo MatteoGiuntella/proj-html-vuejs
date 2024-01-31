@@ -65,14 +65,14 @@ export default {
         <div class="col-2">
           <img
             class="w-100"
-            src="../../public/img/dark-logo.png"
+            src="/img/dark-logo.png"
             alt="dark-logo.png"
           />
         </div>
 
-        <div class="col-6 d-flex justify-content-end">
-          <div class=" d-flex position-relative">
-            <a class="btn dropdown-toggle my-drop">
+        <div class="col-6 d-flex justify-content-end ">
+          <div class=" d-flex position-relative ciao">
+            <a  class="btn dropdown-toggle my-drop ">
               <router-link :to="{ name: 'home' }"> Home</router-link>
             </a>
           </div>
@@ -176,7 +176,7 @@ export default {
           </div>
           <div class="mx-3">
             <img
-              src="../../public/img/homepages-mega-menu-image-alt.jpg"
+              src="/img/homepages-mega-menu-image-alt.jpg"
               alt=""
             />
           </div>
@@ -210,7 +210,7 @@ header {
         }
       }
     }
-    &:hover .hover-container{
+    .ciao:active .hover-container {
         display: block;
       }
 
@@ -221,5 +221,6 @@ header {
       }
     }
   }
+  
 }
 </style>
