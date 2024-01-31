@@ -23,8 +23,10 @@ export default {
       },
     ],
       card:{
-        img:"../../public/img/d0d504142acfde820eef2f11feea6253.jpeg",
-        content:''
+        img:"",
+        content:"",
+        name:"",
+        role:""
       }
     };
   },
@@ -151,7 +153,7 @@ export default {
         <div class="row justify-content-center align-items-center ">
             <div class="col-4">
                 <div class="card-img">
-                    <img src="../../public/img/d0d504142acfde820eef2f11feea6253.jpeg" alt="d0d504142acfde820eef2f11feea6253">
+                    <img src="" alt="">
                 </div>
             </div>
             <div class="col-8">
