@@ -307,7 +307,10 @@ export default {
                     <div class="row">
                         <div class="col-4 mb-4 d-flex" v-for="(course, i) in courses" :key="i">
                             <div class="card w-100 position-relative ">
-                                <img :src="'/img/' + course.imgService"  class="card-img-top" alt="...">
+                                <div class="img_card_section4">
+                                    <img :src="'/img/' + course.imgService"  class="card-img-top" alt="...">
+                                </div>
+                                
                                 <div class="card-body">
                                     <div class="d-flex">
                                         <div class="img_person">
@@ -352,7 +355,7 @@ export default {
             </div>
         </section>
 
-
+        <div class="wave"></div>
         <!-- SECTION 5 -->
         <section class="section_5">
             <div class="container">
@@ -399,8 +402,11 @@ export default {
                         </div>
                     </div>
                     <div class="col-6">
-                        <div>
+                        <div class="img_section5 position-relative ">
                             <img src="/img/home-5-image-01.png" alt="img not found">
+                            <div class="background_effect1">
+                                <img src="/img/maxcoach-shape-05.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -412,9 +418,20 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <div>
-                            <img src="/img/home-5-image-02.png" alt="img not found">
+                        <div class="img_section6">
+                            <div class="img_section6_inside position-relative ">
+                                <div>
+                                    <img src="/img/home-5-image-02.png" alt="img not found">
+                                </div>
+                                <div class="background_effect2">
+                                    <img src="/img/maxcoach-shape-07-150x150.png" alt="">
+                                </div>
+                                <div class="background_effect3">
+                                    <img src="/img/maxcoach-shape-01.png" alt="">
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                     <div class="col-6 pt-5 ">
                         <div class="color_dark_gray mb-3">
@@ -505,6 +522,7 @@ export default {
             </div>
         </section>
 
+        <div class="wave_7"></div>
         <!-- SECTION 8 -->
         <section class="section_8">
             <div class="container">
@@ -552,71 +570,8 @@ export default {
                     </swiper-slide>
                     
                 </swiper>
-                <!-- CAROSELLO -->
-                <!-- <div class="carousel_container">
-                    <div class="single_card_carousel" v-for="(elem, i) in testimonial" :class="'order_'+ elem.id">
-                        <div class="img_testimonial">
-                            <img :src="'/img/' + elem.img" alt="">
-                        </div>
-                        <div class="text-center">
-                            <p class="color_purple">
-                               {{ elem.description }}
-                            </p>
-                            <div class="mb-3">
-                                <strong>{{elem.name}}</strong>
-                            </div>
-                            <div class="color_dark_gray mb-3 ">
-                                / {{elem.profession}}
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- bottoni carosello -->
-                <!-- <div class="text-center button_carousel">
-                    <i @click="changeOrder0()" class="fa-solid fa-circle"></i>
-                    <i @click="changeOrder1()" class="fa-solid fa-circle"></i>
-                    <i @click="changeOrder2()" class="fa-solid fa-circle"></i>
-                    <i @click="changeOrder3()" class="fa-solid fa-circle"></i>
-                </div> -->
             </div>
         </section>
-
-        <!-- sezione 9 PROVA -->
-        <!-- <section class="section_9">
-            <div class="container">
-                <swiper
-                    :slidesPerView="3"
-                    :spaceBetween="30"
-                    :pagination="{
-                    clickable: true,
-                    }"
-                    :modules="modules"
-                    :loop="true"
-                    class="mySwiper testimonial_container"
-                >
-                    <swiper-slide v-for="(elem, i) in testimonial">
-                        <div class="single_card_carousel"  :class="'order_'+ elem.id">
-                            <div class="img_testimonial">
-                                <img :src="'/img/' + elem.img" alt="">
-                            </div>
-                            <div class="text-center">
-                                <p class="color_purple">
-                                {{ elem.description }}
-                                </p>
-                                <div class="mb-3">
-                                    <strong>{{elem.name}}</strong>
-                                </div>
-                                <div class="color_dark_gray mb-3 ">
-                                    / {{elem.profession}}
-                                </div>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    
-                </swiper>
-            </div>
-        </section> -->
     </div>
    
 </template>

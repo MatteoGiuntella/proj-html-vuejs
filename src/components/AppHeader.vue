@@ -73,7 +73,7 @@ export default {
         <div class="col-6 d-flex justify-content-end ">
           <div class=" d-flex position-relative ciao">
             <a  class="btn dropdown-toggle my-drop ">
-              <router-link class="  px-1 text-decoration-none " :to="{ name: 'home' }"> Home</router-link>
+              <router-link class="  px-1 text-decoration-none text-black" :to="{ name: 'home' }"> Home</router-link>
             </a>
           </div>
           <div
@@ -92,11 +92,11 @@ export default {
 
             <ul class="dropdown-menu">
               <li v-for="(elem, j) in navbar[i].list">
-                <a v-if="(navbar[i].list[j] != 'Start-here') && (navbar[i].list[j] != 'About-us-03')" class="dropdown-item" href="">
+                <a v-if="(navbar[i].list[j] != 'Start-here') && (navbar[i].list[j] != 'About-us-03')" class="dropdown-item text-black " href="">
                   {{ elem }}
                 </a>
-                <router-link class="px-3 text-decoration-none " v-else-if="(navbar[i].list[j] == 'Start-here')" :to="{ name: 'aboutus' }"> Aboutus</router-link>
-                <router-link class="px-3 text-decoration-none " v-else-if="(navbar[i].list[j] == 'About-us-03')" :to="{ name: 'starthere' }"> Start here</router-link>
+                <router-link class="px-3 text-decoration-none text-black " v-else-if="(navbar[i].list[j] == 'Start-here')" :to="{ name: 'aboutus' }"> Aboutus</router-link>
+                <router-link class="px-3 text-decoration-none text-black " v-else-if="(navbar[i].list[j] == 'About-us-03')" :to="{ name: 'starthere' }"> Start here</router-link>
               </li>
             </ul>
           </div>
@@ -192,7 +192,7 @@ export default {
 header {
   width: 100%;
   background-color: rgba(245, 241, 237, 0.9);
-  z-index: 2;
+  z-index: 5;
   .container {
     position: relative;
     .hover-container {
