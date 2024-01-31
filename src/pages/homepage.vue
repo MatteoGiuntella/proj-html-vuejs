@@ -307,7 +307,10 @@ export default {
                     <div class="row">
                         <div class="col-4 mb-4 d-flex" v-for="(course, i) in courses" :key="i">
                             <div class="card w-100 position-relative ">
-                                <img :src="'/img/' + course.imgService"  class="card-img-top" alt="...">
+                                <div class="img_card_section4">
+                                    <img :src="'/img/' + course.imgService"  class="card-img-top" alt="...">
+                                </div>
+                                
                                 <div class="card-body">
                                     <div class="d-flex">
                                         <div class="img_person">
