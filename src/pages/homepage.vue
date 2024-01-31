@@ -4,7 +4,6 @@ export default {
     data() {
         return {
             store,
-            activeTestimonial: 0,
             section1:[
                 {
                     url: "home-5-image-box-01.png",
@@ -147,36 +146,70 @@ export default {
                     img:"testimonial-avata-02.jpg",
                     description:"am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.",
                     name:"MINA HOLLACE",
-                    profession:"Freelancer"
+                    profession:"Freelancer",
+                    id: 0
                 },
                 {
                     img:"testimonial-avata-01.jpg",
                     description:"MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
                     name:"MADLEY PONDOR",
-                    profession:"IT Specialist"
+                    profession:"IT Specialist",
+                    id: 0
                 },
                 {
                     img:"testimonial-avata-03.jpg",
                     description:"I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
                     name:"LUVIC DUBBLE",
-                    profession:"Private Tutor"
+                    profession:"Private Tutor",
+                    id: 0
                 },
                 {
                     img:"testimonial-avata-04.jpg",
                     description:"I'm a very strict person so I require everything to be organized and neat. MaxCoach guys just got me.",
                     name:"FLORENCE THEMES",
-                    profession:"Multimedia Admin"
+                    profession:"Multimedia Admin",
+                    id: 0
                 },
                 
             ]
         };
     },
     methods: {
-        right(){
-            this.activeTestimonial++
-        }
+        changeOrder0(){
+            this.testimonial[0].id = 1;
+            this.testimonial[1].id = 2;
+            this.testimonial[2].id = 3;
+            this.testimonial[3].id = 4;
+            console.log("Cliccato 0", this.testimonial);
+        },
+        changeOrder1(){
+            this.testimonial[0].id = 4;
+            this.testimonial[1].id = 1;
+            this.testimonial[2].id = 2;
+            this.testimonial[3].id = 3;
+            console.log("Cliccato 1", this.testimonial);
+        },
+        changeOrder2(){
+            this.testimonial[0].id = 3;
+            this.testimonial[1].id = 4;
+            this.testimonial[2].id = 1;
+            this.testimonial[3].id = 2;
+            console.log("Cliccato 2", this.testimonial);
+        },
+        changeOrder3(){
+            this.testimonial[0].id = 2;
+            this.testimonial[1].id = 3;
+            this.testimonial[2].id = 4;
+            this.testimonial[3].id = 1;
+            console.log("Cliccato 3", this.testimonial);
+        },
+
     }
 }
+
+//carosello
+
+
 </script>
 
 <template>
@@ -270,10 +303,50 @@ export default {
                             <span>Stunning </span> <br>
                             <span>Career Perspective</span>
                         </div>
+                        
                         <!-- ACCORDION -->
-                        <div>
-                            ACCORDION
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Multiple Platforms Supported for Teaching & Studying
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span class="color_dark_gray">
+                                        MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device.
+                                    </span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Multiple Course Participation at the Same Time
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Study for a number of courses at the same time is possible as long as you can afford the fee and time for completing them in the proper time. Learn at your own desired timeline and timetable. Maximum up to 5 course at a time for a learner at MaxCoach.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Track Study Progress & Deliver Prompt Feedback
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    It's not just a normal thing to be able to build such a solid online educational system like MaxCoach where your progress is easily tracked and feedback is properly delivered. We promise to keep improving our system for better stability and flexibility.
+                                </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Fine accordion -->
                     </div>
                 </div>
             </div>
@@ -470,22 +543,22 @@ export default {
                                     <i class="fa-solid fa-location-dot"></i>    
                                     {{ elem.city }}
                                 </div>
-                                <div>
+                                <div class="mt-3">
                                     <strong>
                                         {{ elem.info }}
                                     </strong>
                                 </div>    
                             </div>
                             <div>
-                                <div class="text-green">
+                                <div class="text-green d-flex justify-content-center ">
                                     {{ elem.day }}
                                 </div>
                                 <div>
-                                    <strong>
+                                    <strong class="d-flex justify-content-center ">
                                         {{ elem.month }}
                                     </strong>
                                 </div>
-                                <div>
+                                <div class="mt-1">
                                     <button>
                                         <a href="#">
                                             Get ticket
@@ -526,8 +599,8 @@ export default {
 
                 <!-- CAROSELLO -->
                 <div class="carousel_container">
-                    <div class="single_card_carousel" v-for="(elem, i) in testimonial">
-                        <div class="img_testimonial" >
+                    <div class="single_card_carousel" v-for="(elem, i) in testimonial" :class="'order_'+ elem.id">
+                        <div class="img_testimonial">
                             <img :src="'/img/' + elem.img" alt="">
                         </div>
                         <div class="text-center">
@@ -545,18 +618,16 @@ export default {
                 </div>
 
                 <!-- bottoni carosello -->
-                <div class="text-center">
-                    <i @click="show24()" class="fa-solid fa-circle"></i>
+                <div class="text-center button_carousel">
+                    <i @click="changeOrder0()" class="fa-solid fa-circle"></i>
+                    <i @click="changeOrder1()" class="fa-solid fa-circle"></i>
+                    <i @click="changeOrder2()" class="fa-solid fa-circle"></i>
+                    <i @click="changeOrder3()" class="fa-solid fa-circle"></i>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 9 -->
-        <section class="section_9">
-            <div class="container">
-               
-            </div>
-        </section>
+   
     </div>
    
 </template>

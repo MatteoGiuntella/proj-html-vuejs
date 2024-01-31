@@ -59,6 +59,7 @@ export default {
 
 <template>
   <header>
+    <router-link :to="{ name: 'aboutus' }"> aboutus</router-link>
     <div class="container position-relative">
       <div class="row align-items-center p-3">
         <div class="col-2">
@@ -91,10 +92,12 @@ export default {
 
             <ul class="dropdown-menu">
               <li v-for="(elem, j) in navbar[i].list">
-                <a class="dropdown-item" href="">
+                <a v-if="(i != 5)" class="dropdown-item" href="">
                   {{ elem }}
                   
                 </a>
+                <router-link v-else-if="(i == 5)" :to="{ name: 'aboutus' }"> aboutus</router-link>
+
               </li>
             </ul>
           </div>
