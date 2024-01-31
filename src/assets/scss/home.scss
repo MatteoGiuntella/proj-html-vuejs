@@ -387,3 +387,47 @@ h1{
     }
 }
 
+//SECTION 9
+.section_8{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: $lightbeige;
+
+    .single_card_carousel{
+        position: relative;
+        padding: 30px;
+        padding-top: 70px;
+        margin-bottom: 70px;
+        .img_testimonial{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            img{
+                border-radius: 50%;
+                width: 100%;
+            }
+          }
+      }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .testimonial_container{
+    padding-top: 70px;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+ 

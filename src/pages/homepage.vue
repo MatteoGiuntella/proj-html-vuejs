@@ -2,6 +2,13 @@
 import {store} from '../store.js'
 import component2 from '../components/components home page/component2.vue';
 import component3 from '../components/components home page/component3.vue';
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 export default {
     data() {
@@ -147,7 +154,7 @@ export default {
             testimonial:[
                 {
                     img:"testimonial-avata-02.jpg",
-                    description:"am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.",
+                    description:"I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.",
                     name:"MINA HOLLACE",
                     profession:"Freelancer",
                     id: 0
@@ -180,6 +187,13 @@ export default {
     components: {
         component2,
         component3,
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+      return {
+        modules: [Pagination],
+      };
     },
     methods: {
         changeOrder0(){
@@ -251,7 +265,6 @@ export default {
             </div>
         </div>
 
-
         <!-- SECTION 1 -->
         <section class="section_1">
             <div class="container">
@@ -292,7 +305,6 @@ export default {
             </div>
         </section>   
 
-
         <!-- SECTION 2 -->
         <section class="section_2">
             <div class="container">
@@ -300,7 +312,6 @@ export default {
             </div>
             
         </section>
-
 
         <!-- SECTION 3 -->
         <section class="section_3">
@@ -538,8 +549,38 @@ export default {
                     </div>
                 </div> 
 
+                <swiper
+                    :slidesPerView="3"
+                    :spaceBetween="30"
+                    :pagination="{
+                    clickable: true,
+                    }"
+                    :modules="modules"
+                    :loop="true"
+                    class="mySwiper testimonial_container"
+                >
+                    <swiper-slide v-for="(elem, i) in testimonial">
+                        <div class="single_card_carousel"  :class="'order_'+ elem.id">
+                            <div class="img_testimonial">
+                                <img :src="'/img/' + elem.img" alt="">
+                            </div>
+                            <div class="text-center">
+                                <p class="color_purple">
+                                {{ elem.description }}
+                                </p>
+                                <div class="mb-3">
+                                    <strong>{{elem.name}}</strong>
+                                </div>
+                                <div class="color_dark_gray mb-3 ">
+                                    / {{elem.profession}}
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    
+                </swiper>
                 <!-- CAROSELLO -->
-                <div class="carousel_container">
+                <!-- <div class="carousel_container">
                     <div class="single_card_carousel" v-for="(elem, i) in testimonial" :class="'order_'+ elem.id">
                         <div class="img_testimonial">
                             <img :src="'/img/' + elem.img" alt="">
@@ -556,24 +597,53 @@ export default {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- bottoni carosello -->
-                <div class="text-center button_carousel">
+                <!-- <div class="text-center button_carousel">
                     <i @click="changeOrder0()" class="fa-solid fa-circle"></i>
                     <i @click="changeOrder1()" class="fa-solid fa-circle"></i>
                     <i @click="changeOrder2()" class="fa-solid fa-circle"></i>
                     <i @click="changeOrder3()" class="fa-solid fa-circle"></i>
-                </div>
+                </div> -->
             </div>
         </section>
 
         <!-- sezione 9 PROVA -->
-        <section class="section_9">
+        <!-- <section class="section_9">
             <div class="container">
-
+                <swiper
+                    :slidesPerView="3"
+                    :spaceBetween="30"
+                    :pagination="{
+                    clickable: true,
+                    }"
+                    :modules="modules"
+                    :loop="true"
+                    class="mySwiper testimonial_container"
+                >
+                    <swiper-slide v-for="(elem, i) in testimonial">
+                        <div class="single_card_carousel"  :class="'order_'+ elem.id">
+                            <div class="img_testimonial">
+                                <img :src="'/img/' + elem.img" alt="">
+                            </div>
+                            <div class="text-center">
+                                <p class="color_purple">
+                                {{ elem.description }}
+                                </p>
+                                <div class="mb-3">
+                                    <strong>{{elem.name}}</strong>
+                                </div>
+                                <div class="color_dark_gray mb-3 ">
+                                    / {{elem.profession}}
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    
+                </swiper>
             </div>
-        </section>
+        </section> -->
     </div>
    
 </template>
