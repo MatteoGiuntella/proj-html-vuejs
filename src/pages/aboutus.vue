@@ -194,6 +194,38 @@ export default {
       </div>
     </div>
   </div>
+
+  <!-- section 4 -->
+<section>
+  <div class="container">
+    <div class="row my-5">
+        <div class="col-12 text-center ">
+            <h5>MAXIMIZE YOUR POTENTIALS</h5>
+        </div>
+    </div>
+
+    <div class="row my-5 ">
+      <div class="col-12 text-xl-center">
+        <span
+          ><h1>Things we <span class="hearts">Can Help</span> you</h1></span
+        >
+      </div>
+    </div>
+
+    <div class="row">
+       
+        <div class="col-6">
+            
+        </div>
+        <div class="col-6">
+           <div class="bg-box">     
+            <img class="" src="../../public/img/home-5-image-box-01.png" alt="">
+           </div>
+        </div>
+
+    </div>
+  </div>
+</section> 
 </template>
 
 <style lang="scss" scoped>
@@ -237,46 +269,6 @@ section {
   }
 }
 // // section 2
-// .section_2 {
-//   margin-top: 50px;
-//   margin-bottom: 50px;
-//   .text-information-container {
-//     span:first-of-type,
-//     span:last-of-type {
-//       color: $purple;
-//       font-size: 2.7em;
-//       font-weight: 600;
-//     }
-//     span:nth-of-type(2) {
-//       color: $green;
-//       font-size: 2.7em;
-//       font-weight: 300;
-//     }
-//   }
-//   //accordion
-//   .accordion-button:not(.collapsed) {
-//     background-color: $green;
-//     color: white;
-//     box-shadow: none;
-//   }
-
-//   .accordion-button.collapsed::after {
-//     background: url("/img/plus.svg");
-//     background-size: contain;
-//   }
-
-//   .accordion-button:not(.collapsed)::after {
-//     background: url("/img/minus.png");
-//     background-size: contain;
-//   }
-// }
-// .img_container_section2 {
-//   display: flex;
-//   justify-content: center;
-//   img {
-//     display: block;
-//   }
-// }
 
 // section 3
 .hearts{
@@ -286,7 +278,6 @@ section {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -296,5 +287,17 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+// section 4
+.bg-box{
+    height: 600px;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+    
+        
+    }
 }
 </style>

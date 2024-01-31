@@ -73,7 +73,7 @@ export default {
         <div class="col-6 d-flex justify-content-end ">
           <div class=" d-flex position-relative ciao">
             <a  class="btn dropdown-toggle my-drop ">
-              <router-link :to="{ name: 'home' }"> Home</router-link>
+              <router-link class="  px-1 text-decoration-none " :to="{ name: 'home' }"> Home</router-link>
             </a>
           </div>
           <div
@@ -95,8 +95,8 @@ export default {
                 <a v-if="(navbar[i].list[j] != 'Start-here') && (navbar[i].list[j] != 'About-us-03')" class="dropdown-item" href="">
                   {{ elem }}
                 </a>
-                <router-link v-else-if="(navbar[i].list[j] == 'Start-here')" :to="{ name: 'aboutus' }"> Aboutus</router-link>
-                <router-link v-else-if="(navbar[i].list[j] == 'About-us-03')" :to="{ name: 'starthere' }"> Start here</router-link>
+                <router-link class="px-3 text-decoration-none " v-else-if="(navbar[i].list[j] == 'Start-here')" :to="{ name: 'aboutus' }"> Aboutus</router-link>
+                <router-link class="px-3 text-decoration-none " v-else-if="(navbar[i].list[j] == 'About-us-03')" :to="{ name: 'starthere' }"> Start here</router-link>
               </li>
             </ul>
           </div>
@@ -221,6 +221,7 @@ header {
       }
     }
   }
+  
   
 }
 </style>
