@@ -106,7 +106,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section class="pt-5">
     <div class="container">
       <div class="row my-5">
         <div class="col-6">
