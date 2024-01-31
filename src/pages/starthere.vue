@@ -49,7 +49,7 @@ export default {
 </script>
 
 <template>
-  <main>
+  <main class=" pt-5">
     <div class="section-array">
       <div class="container-img text-white">
         <!-- INIZIO carousel -->
@@ -57,6 +57,27 @@ export default {
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../../public/img/stock-full-hd-03-480x298.jpg" class="d-block w-100" alt="../../public/img/stock-full-hd-03-480x298.jpg">
+              <div class="text-container">
+                <h2>
+                  OPEN UP A BRIGHT SKY
+                </h2>
+                <div>
+                  <div class="subtitle-container d-flex">
+                    <h5 class="me-4">
+                      01
+                    </h5>
+                    <div class="me-4">
+                      <!-- <i class="fa-solid fa-minus fa-xl"></i> -->
+                    </div>
+                    <h5 class="me-4">
+                      LIFE CONSULTANCY
+                    </h5>
+                  </div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam recusandae ducimus nemo quibusdam vitae, eligendi reprehenderit incidunt esse velit modi, quas porro? Molestiae, qui vitae quos quibusdam possimus quidem?.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="carousel-item">
               <img src="../../public/img/stock-full-hd-04-480x298.jpg" class="d-block w-100" alt="../../public/img/stock-full-hd-03-480x298.jpg">
@@ -360,7 +381,7 @@ export default {
     </div>
     <!-- FINE section-register -->
 
-    <div class="section-accordion"> 
+    <div class="section-accordion mt-5"> 
       <div class="container text-center">
         <p>
           PROVA SUBTITLE SECTION ACCORDION
