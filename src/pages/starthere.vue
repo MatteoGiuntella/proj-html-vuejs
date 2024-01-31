@@ -52,8 +52,30 @@ export default {
   <main>
     <div class="section-array">
       <div class="container-img text-white">
-        
+        <!-- INIZIO carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../../public/img/stock-full-hd-03-480x298.jpg" class="d-block w-100" alt="../../public/img/stock-full-hd-03-480x298.jpg">
+            </div>
+            <div class="carousel-item">
+              <img src="../../public/img/stock-full-hd-04-480x298.jpg" class="d-block w-100" alt="../../public/img/stock-full-hd-03-480x298.jpg">
+            </div>
+            <div class="carousel-item">
+              <img src="../../public/img/stock-full-hd-05-480x298.jpg" class="d-block w-100" alt="../../public/img/stock-full-hd-03-480x298.jpg">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
+      <!-- FINE carousel -->
       
     </div>
     <!-- FINE section-array -->
@@ -338,7 +360,7 @@ export default {
     </div>
     <!-- FINE section-register -->
 
-    <div class="section-accordion">
+    <div class="section-accordion"> 
       <div class="container text-center">
         <p>
           PROVA SUBTITLE SECTION ACCORDION
@@ -349,84 +371,95 @@ export default {
 
         <div class="row">
           <div class="col accordion-container">
-            <div class="accordion flex-wrap" id="accordionExample">
-              <div class="accordion-item">
+            
+            <!-- ACCORDION left-->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item mb-4">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item #1
+                    Multiple Platforms Supported for Teaching & Studying
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <span class="color_dark_gray">
+                      MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device.
+                    </span>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item mb-4">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
+                    Multiple Course Participation at the Same Time
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    Study for a number of courses at the same time is possible as long as you can afford the fee and time for completing them in the proper time. Learn at your own desired timeline and timetable. Maximum up to 5 course at a time for a learner at MaxCoach.
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item mb-4">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
+                    Track Study Progress & Deliver Prompt Feedback
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    It's not just a normal thing to be able to build such a solid online educational system like MaxCoach where your progress is easily tracked and feedback is properly delivered. We promise to keep improving our system for better stability and flexibility.
                   </div>
                 </div>
               </div>
             </div>
+            <!-- FINE  accordion -->
           </div>
+          <!-- FINE col -->
+
           <div class="col accordion-container">
-            <div class="accordion flex-wrap" id="accordionExample">
-              <div class="accordion-item">
+            <!-- ACCORDION right-->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item mb-4">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                    Accordion Item #4
+                    Multiple Platforms Supported for Teaching & Studying
                   </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <span class="color_dark_gray">
+                      MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device.
+                    </span>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item mb-4">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Accordion Item #5
+                    Multiple Course Participation at the Same Time
                   </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    Study for a number of courses at the same time is possible as long as you can afford the fee and time for completing them in the proper time. Learn at your own desired timeline and timetable. Maximum up to 5 course at a time for a learner at MaxCoach.
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item mb-4">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Accordion Item #6
+                    Track Study Progress & Deliver Prompt Feedback
                   </button>
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    It's not just a normal thing to be able to build such a solid online educational system like MaxCoach where your progress is easily tracked and feedback is properly delivered. We promise to keep improving our system for better stability and flexibility.
                   </div>
                 </div>
               </div>
             </div>
+            <!-- FINE  accordion -->
           </div>
         </div>
       </div>
@@ -443,7 +476,7 @@ export default {
             </div>
             <ul>
               <li  v-for="(listOne, j) in footerLeftNav.list">
-                {{ listOne}}
+                {{ listOne }}
               </li>
             </ul>
           </div>
