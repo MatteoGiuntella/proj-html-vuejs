@@ -4,6 +4,35 @@ export default {
   data() {
     return {
       store,
+
+
+
+      carouselLists: [
+        {
+          image: '../../public/img/stock-full-hd-03-480x298.jpg',
+          title:'OPEN UP A BRIGHT SKY',
+          number:'01',
+          subtitle:'LIFE CONSULTANCY',
+          description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam recusandae ducimus nemo quibusdam vitae, eligendi reprehenderit'
+        },
+        {
+          image: '../../public/img/stock-full-hd-04-480x298.jpg',
+          title:'AWAKEN YOUR GIFTS NOW',
+          number:'02',
+          subtitle:'INSPIRING CURRICULUM',
+          description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugiat Lorem ipsum dolor sit amet consectetur adipisicing'
+        },
+        {
+          image: '../../public/img/stock-full-hd-05-480x298.jpg',
+          title:'WRITE YOUR OWN LIFE BOOK',
+          number:'03',
+          subtitle:'SKILL ADVANCEMENT',
+          description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam recusandae ducimus nemo quibusdam '
+        },
+      ],
+
+
+
       footerLeftNavs: [
         {
           title: "Address",
@@ -40,7 +69,7 @@ export default {
             'Terms of services'
           ],
         },
-      ]
+      ],
     };
   },
   methods: {
@@ -55,35 +84,31 @@ export default {
         <!-- INIZIO carousel -->
         <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../../public/img/stock-full-hd-03-480x298.jpg" class="d-block w-100" alt="../../public/img/stock-full-hd-03-480x298.jpg">
+            <div class="carousel-item active" v-for="(carouselList, i) in carouselLists" :key="i">
+              <img :src="carouselList.image" :alt="carouselList.title" class="d-block w-100">
+              <div class="img-filter">
+
+              </div>
               <div class="text-container">
                 <h2>
-                  OPEN UP A BRIGHT SKY
+                  {{ carouselList.title }}
                 </h2>
                 <div>
                   <div class="subtitle-container d-flex">
                     <h5 class="me-4">
-                      01
+                      {{ carouselList.number }}
                     </h5>
                     <div class="me-4">
-                      <!-- <i class="fa-solid fa-minus fa-xl"></i> -->
                     </div>
                     <h5 class="me-4">
-                      LIFE CONSULTANCY
+                      {{ carouselList.subtitle }}
                     </h5>
                   </div>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam recusandae ducimus nemo quibusdam vitae, eligendi reprehenderit incidunt esse velit modi, quas porro? Molestiae, qui vitae quos quibusdam possimus quidem?.
+                    {{ carouselList.description }}
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="../../public/img/stock-full-hd-04-480x298.jpg" class="d-block w-100" alt="../../public/img/stock-full-hd-03-480x298.jpg">
-            </div>
-            <div class="carousel-item">
-              <img src="../../public/img/stock-full-hd-05-480x298.jpg" class="d-block w-100" alt="../../public/img/stock-full-hd-03-480x298.jpg">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -270,11 +295,14 @@ export default {
     <div class="section-register">
       <div class="container text-center mt-5">
         <p>
-          PROVA SUBTITLE SECTION REGISTER
+          GET YOURSELF A 
+          <b>
+            MAXCOACH
+          </b> 
+          ID?
         </p>
         <h2 class="fw-bold mb-5">
-          PROVA SECTION REGISTER
-        </h2>
+          Take your interest and register an online class today to enjoy life fully        </h2>
 
         <button type="button" class="btn text-white fw-bold fs-6">
           Large button
@@ -384,12 +412,15 @@ export default {
     <div class="section-accordion mt-5"> 
       <div class="container text-center">
         <p>
-          PROVA SUBTITLE SECTION ACCORDION
+          SUCCEED WITH 
+          <b>
+            MAXCOACH
+          </b>
         </p>
         <h2 class="fw-bold mb-5">
-          PROVA SECTION ACCORDION
+          Frequently asked questions
+          
         </h2>
-
         <div class="row">
           <div class="col accordion-container">
             
