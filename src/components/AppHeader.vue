@@ -6,12 +6,12 @@ export default {
         {
           title: "Pages",
           list: [
-            "Start here",
+            "Start-here",
             "Succes story",
             "About me",
-            "About us 01",
-            "About us 02",
-            "About us 03",
+            "About-us-01",
+            "About-us-02",
+            "About-us-03",
             "Contact me",
             "Contact us",
             "Paurchause Guide",
@@ -92,12 +92,11 @@ export default {
 
             <ul class="dropdown-menu">
               <li v-for="(elem, j) in navbar[i].list">
-                <a v-if="(i != 5)" class="dropdown-item" href="">
+                <a v-if="(navbar[i].list[j] != 'Start-here') && (navbar[i].list[j] != 'About-us-03')" class="dropdown-item" href="">
                   {{ elem }}
-                  
                 </a>
-                <router-link v-else-if="(i == 5)" :to="{ name: 'aboutus' }"> aboutus</router-link>
-
+                <router-link v-else-if="(navbar[i].list[j] == 'Start-here')" :to="{ name: 'aboutus' }"> Aboutus</router-link>
+                <router-link v-else-if="(navbar[i].list[j] == 'About-us-03')" :to="{ name: 'starthere' }"> Start here</router-link>
               </li>
             </ul>
           </div>
