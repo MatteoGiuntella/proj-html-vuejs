@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <footer>
+  <footer class="footer-top">
     <div class="container button-section text-center pt-5 position-relative">
       <img
         src="../../../public/img/maxcoach-shape-01.png"
@@ -39,8 +39,10 @@ export default {
 @use "../../assets/scss/main.scss" as *;
 @use "../../assets/scss/partials/variables.scss" as *;
 
+.footer-top {
+  background-color: #f5f5f5;
+}
 .button-section {
-  background-color: #F5F5F5;
   padding-bottom: 50px;
   img:first-of-type {
     position: absolute;

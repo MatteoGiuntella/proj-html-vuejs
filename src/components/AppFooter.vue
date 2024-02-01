@@ -1,5 +1,5 @@
 <script>
-import footertop from "../components/components footer top/footertop.vue";
+// import footertop from "../components/components footer top/footertop.vue";
 
 export default {
   data() {
@@ -36,7 +36,7 @@ export default {
     };
   },
   components: {
-    footertop,
+    // footertop,
   },
   methods: {},
 };
