@@ -112,8 +112,8 @@ export default {
 <template>
   <div>
     <offcanvas />
-  <section class="pt-5">
-    <div class="container">
+  <section class="pt-5 bg-section-1">
+    <div class="container pt-5 ">
       <div class="row my-5">
         <div class="col-6">
           <h5>EVERYTHING IS MAXCOACH</h5>
@@ -202,8 +202,8 @@ export default {
   </div>
 
   <!-- section 4 -->
-<section>
-  <div class="container">
+<section class="bg">
+  <div class="container pt-5 ">
     <div class="row my-5">
         <div class="col-12 text-center ">
             <h5>MAXIMIZE YOUR POTENTIALS</h5>
@@ -251,8 +251,7 @@ export default {
             </div>
         </div>
         <div class="col-6">
-           <div class="bg-box">     
-            <img class="" src="../../public/img/home-5-image-box-01.png" alt="">
+           <div class="bg-box">   
            </div>
         </div>
 
@@ -267,6 +266,7 @@ export default {
 @use "../assets/scss/aboutus.scss";
 @use "../assets/scss/partials/variables.scss" as *;
 section {
+    background-color: #FCFCFC;
   div {
     div {
       div {
@@ -324,15 +324,15 @@ section {
   align-items: center;
 }
 // section 4
-.bg-box{
-    height: 600px;
-    img{
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-        display: block;
-    
-        
-    }
+.bg{
+  background-color: #F5F5F5;
 }
+.bg-box{
+    height: 400px;
+    background-image: url("../../public/img/home-5-image-box-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 </style>

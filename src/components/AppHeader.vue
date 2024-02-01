@@ -2,32 +2,32 @@
 export default {
   data() {
     return {
-      homelist: [
+      homelist:[
         {
-          list1: [
-            "MaxCoach Education",
-            "Course Portal",
-            "Distant Learning",
-            "Multimedia Pedagogy",
-            "Modern Schooling",
-            "Remote Training",
-            "Health Coaching",
-            "Gym Coaching",
-            "Business",
-            "Artist",
+          list1:[
+          "MaxCoach Education",
+          "Course Portal",
+          "Distant Learning",
+          "Multimedia Pedagogy",
+          "Modern Schooling",
+          "Remote Training",
+          "Health Coaching",
+          "Gym Coaching",
+          "Business",
+          "Artist"
           ],
-          list2: [
-            "Kitchen Coach",
-            "Motivation",
-            "Dancing",
-            "Guitar",
-            "Yoga",
-            "Photography",
-            "Personal Finance",
-            "Sales Coaching",
-            "Mental Therapy",
-          ],
-        },
+          list2:[
+          "Kitchen Coach",
+          "Motivation",
+          "Dancing",
+          "Guitar",
+          "Yoga",
+          "Photography",
+          "Personal Finance",
+          "Sales Coaching",
+          "Mental Therapy"
+          ]
+        }
       ],
       navbar: [
         {
@@ -114,12 +114,12 @@ export default {
                 <div class="d-flex">
                   <div class="">
                     <ul class="list-unstyled">
-                      <li v-for="(elem, i) in homelist">{{ elem.list1 }}</li>
+                      <li class="p-2" v-for="(elem,i) in homelist[0].list1">{{ elem }} </li>
                     </ul>
                   </div>
                   <div class="mx-2">
                     <ul class="list-unstyled">
-                      <li v-for="(elem, i) in homelist">{{ elem.list2 }}</li>
+                      <li class="p-2" v-for="(elem,i) in homelist[0].list2"> {{ elem }} </li>
                     </ul>
                   </div>
                   <div class="p-2">
@@ -241,13 +241,15 @@ header {
   z-index: 5;
   .container {
     position: relative;
-
+    
     .box-left-navbar {
       width: 150px;
       img {
         width: 100%;
       }
     }
+    }
+
+    
   }
-}
 </style>
