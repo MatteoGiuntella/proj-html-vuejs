@@ -190,7 +190,7 @@ export default {
               >
                 <i class="fa-solid fa-cart-shopping fa-sm"></i>
               </button>
-              <div class="dropdown-menu cart-box">
+              <div class="dropdown-menu cart-box w-100">
                 <div class="dropdown-item mb-5 text-center">
                   <i
                     class="fa-brands fa-opencart fa-2xl"
@@ -198,7 +198,7 @@ export default {
                   ></i>
                 </div>
                 <h5 class="text-center mb-3">Your Cart is empty</h5>
-                <button class="dropdown-item my-button" type="button">
+                <button class="dropdown-item my-button w-100 bg-success text-center" type="button">
                   Browse Shop
                 </button>
               </div>
