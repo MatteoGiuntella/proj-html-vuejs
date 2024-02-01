@@ -69,6 +69,9 @@ export default {
         padding: 10px 25px;
         border: none;
         color: white;
+        &:hover{
+            background-color: rgb(63, 58, 99);
+        }
     }
 }
 .button_offacnvas{
@@ -76,6 +79,7 @@ export default {
     z-index: 3;
     right: 5px;
     top: 30%;
+   
 }
 
 </style>
