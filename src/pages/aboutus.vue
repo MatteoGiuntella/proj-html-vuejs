@@ -234,28 +234,28 @@ export default {
     <div class="row">
        
         <div class="col-6">
-            <div class="cart pt-2">
-                <div class="mb-3">
+            <div class="cart mb-5 pt-2">
+                <div class=" mb-3 ">
                     <h2><i class="fa-regular fa-flag fa-2xl" style="color: #000000;"></i></h2>
                 </div>
                 <h5>Life Mentoring</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis voluptatum delectus, quidem neque </p>
             </div>
-            <div class="cart my-3 pt-2">
-                <div class="mb-3">
+            <div class="cart mb-5 pt-2">
+                <div class=" mb-3">
                     <h2><i class="fa-solid fa-hammer fa-2xl" style="color: #000000;"></i></h2>
                 </div>
                 <h5>Self Development</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis voluptatum delectus, quidem neque </p>
             </div>
-            <div class="cart my-3 pt-2">
+            <div class="cart mb-5 pt-2">
                 <div class="mb-3">
                     <h2><i class="fa-solid fa-anchor fa-2xl" style="color: #000000;"></i></h2>
                 </div>
                 <h5>Ask Consulantancy</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis voluptatum delectus, quidem neque </p>
             </div>
-            <div class="cart my-3 pt-2">
+            <div class="cart mb-5 pt-2">
                 <div class="mb-3">
                     <h2><i class="fa-solid fa-display fa-2xl" style="color: #000000;"></i></h2>
                 </div>
@@ -264,8 +264,8 @@ export default {
             </div>
         </div>
         <div class="col-6">
-           <div class="bg-box">   
-             <img class=" w-100 " src="../../public/img/home-5-image-box-01.png" alt="">
+           <div class="bg-box ps-5 pt-5">   
+             <img class=" w-100 " src="../../public/img/about-us-03-image-02.png" alt="">
            </div>
         </div>
 

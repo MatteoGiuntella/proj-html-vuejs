@@ -89,7 +89,14 @@ export default {
     <div class="container position-relative">
       <div class="row align-items-center p-3">
         <div class="col-2">
-          <img class="w-100" src="/img/dark-logo.png" alt="dark-logo.png" />
+          <router-link
+                class="px-1 text-decoration-none text-black cl-hov"
+                :to="{ name: 'home' }"
+              >
+              <img class="w-100" src="/img/dark-logo.png" alt="dark-logo.png" /></router-link
+              >
+          
+
         </div>
 
         <div class="col-6 d-flex justify-content-end">
