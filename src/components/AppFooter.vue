@@ -1,4 +1,6 @@
 <script>
+// import footertop from '../components/components footer top/footertop.vue';
+
 export default {
   data() {
     return {
@@ -33,34 +35,19 @@ export default {
       ],
     };
   },
-  methods: {},
+  components: {
+    // footertop
+  },
+  methods: {
+
+  },
 };
 </script>
 
 <template>
   <footer>
-    <div class="container button-section text-center pt-5 position-relative ">
-        <img src="../../public/img/maxcoach-shape-01.png" alt="maxcoach-shape-01.png">
-        <img src="../../public/img/maxcoach-shape-02.png" alt="maxcoach-shape-02.png">
-
-      <div class="subtitle-section">
-        <span class="fs-4 fw-bold">
-          Start today for getting
-        </span>
-        <span class="fs-4">
-          Online Certification
-        </span>
-      </div>
-      <h2 class="fw-bold mb-5">
-        You can be your own guiding star with our help!
-      </h2>
-
-      <button type="button" class="btn text-white fw-bold fs-6">
-        Get started for free
-      </button>
-    </div>
-    <!-- FINE container button-->
-
+    <!-- footertop -->
+    <!-- <footertop/> -->
 
     <div class="container">
       <div class="row">
@@ -161,37 +148,8 @@ footer {
       color: $green;
     }
   }  
-
-
-  .button-section {
-    img:first-of-type {
-        position: absolute;
-        top: 20%;
-        left: 5%;
-    }
-    img:last-of-type {
-        position: absolute;
-        bottom: 30%;
-        right: 5%;
-    }
-
-    .subtitle-section {
-      span:last-child {
-        color: $green;
-      }
-    }
-
-    button {
-      background-color: $green;
-      padding: 15px 75px;
-      margin-bottom: 200px;
-
-      &:hover {
-        background-color: $purple;
-      }
-    }
-  }
   .container {
+    padding-top: 100px;
     .row {
       .col-6:first-child {
         .social-container {

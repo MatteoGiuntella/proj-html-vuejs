@@ -1,12 +1,10 @@
 <script>
 import {store} from '../store.js'
+import offcanvas from '../components/components home page/offcanvas.vue';
 export default {
   data() {
     return {
       store,
-
-
-
       carouselLists: [
         {
           image: '../../public/img/stock-full-hd-03-480x298.jpg',
@@ -30,47 +28,47 @@ export default {
           description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam recusandae ducimus nemo quibusdam '
         },
       ],
-
-
-
-      footerLeftNavs: [
-        {
-          title: "Address",
-          list: [
-            '382 NE 191st St # 87394 Miami, FL 33179-3899',
-            '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
-            'support@maxcoach.com',
-          ]
-        },
-      ],
-      footerRightNavs:[
-        {
-          title: "Explore",
-          list: [
-            'Start here',
-            'Blog',
-            'About us'
-          ],
-        },
-        {
-          title: "",
-          list: [
-            'Success story',
-            'Courses',
-            'Contact us'
-          ],
-        },
-        {
-          title: "Information",
-          list: [
-            'Membership',
-            'Purchase guide',
-            'Privacy policy',
-            'Terms of services'
-          ],
-        },
-      ],
+      // footerLeftNavs: [
+      //   {
+      //     title: "Address",
+      //     list: [
+      //       '382 NE 191st St # 87394 Miami, FL 33179-3899',
+      //       '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
+      //       'support@maxcoach.com',
+      //     ]
+      //   },
+      // ],
+      // footerRightNavs:[
+      //   {
+      //     title: "Explore",
+      //     list: [
+      //       'Start here',
+      //       'Blog',
+      //       'About us'
+      //     ],
+      //   },
+      //   {
+      //     title: "",
+      //     list: [
+      //       'Success story',
+      //       'Courses',
+      //       'Contact us'
+      //     ],
+      //   },
+      //   {
+      //     title: "Information",
+      //     list: [
+      //       'Membership',
+      //       'Purchase guide',
+      //       'Privacy policy',
+      //       'Terms of services'
+      //     ],
+      //   },
+      // ],
     };
+  },
+  components: {
+    offcanvas
   },
   methods: {
   }
@@ -79,6 +77,9 @@ export default {
 
 <template>
   <main class=" pt-5">
+    <!-- OFFCANVAS -->
+    <offcanvas/>
+
     <div class="section-array">
       <div class="container-img text-white">
         <!-- INIZIO carousel -->
@@ -126,7 +127,6 @@ export default {
     </div>
     <!-- FINE section-array -->
     
-
     <div class="container">
       <div class="section-steps text-center mt-5">
         <p>
