@@ -314,6 +314,15 @@ h1{
         z-index: -1;
     }
 }
+
+.img_section5{
+    &:hover .background_effect1 img{
+        transform: rotate(360deg);
+      }
+      img {
+          transition: width 2s, height 2s, transform 4s;
+        }
+}
 //SECTION 6
 
 .img_section6{
@@ -329,14 +338,30 @@ h1{
     bottom: -10px;
     right: 100px;
     z-index: -1;
-  
+    
+    img {
+        transition: width 2s, height 2s, transform 2s;
+      }
+    .button-section:hover img {
+      transform: rotate(360deg);
+    }
 }
 .background_effect3{
     position: absolute;
     top: 50%;
     left: -130px;
     z-index: 1;
-  
+    
+   
+}
+.img_section6{
+    &:hover .background_effect2 img,
+    &:hover .background_effect3 img {
+        transform: rotate(360deg);
+      }
+      img {
+          transition: width 2s, height 2s, transform 4s;
+        }
 }
 
 //SECTION 7
@@ -454,7 +479,10 @@ h1{
  .wave_7{
     height: 80px;
     background-image: url("/img/jumbo-overlay.svg");
+    background-color: rgb(252, 252, 252);
     transform: rotate(180deg);
     transform: scaley(-1);
+    
+    
 
  }

@@ -3,6 +3,8 @@ import {store} from '../store.js'
 import component2 from '../components/components home page/component2.vue';
 import component3 from '../components/components home page/component3.vue';
 import offcanvas from '../components/components home page/offcanvas.vue';
+import footertop from "../components/components footer top/footertop.vue";
+
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -192,7 +194,9 @@ export default {
         component3,
         Swiper,
         SwiperSlide,
-        offcanvas
+        offcanvas,
+        footertop,
+
     },
     setup() {
       return {
@@ -578,6 +582,7 @@ export default {
                 </swiper>
             </div>
         </section>
+        <footertop />
     </div>
    
 </template>
