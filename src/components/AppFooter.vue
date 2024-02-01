@@ -1,5 +1,5 @@
 <script>
-// import footertop from '../components/components footer top/footertop.vue';
+import footertop from "../components/components footer top/footertop.vue";
 
 export default {
   data() {
@@ -36,19 +36,14 @@ export default {
     };
   },
   components: {
-    // footertop
+    footertop,
   },
-  methods: {
-
-  },
+  methods: {},
 };
 </script>
 
 <template>
   <footer>
-    <!-- footertop -->
-    <!-- <footertop/> -->
-
     <div class="container">
       <div class="row">
         <div class="col-6">
@@ -116,14 +111,11 @@ export default {
       <!-- FINE row -->
       <div class="row">
         <div class="col text-center mt-3 mb-2">
-          <p>
-            © 2020 Maxcoach. All Rights Reserved
-          </p>
+          <p>© 2020 Maxcoach. All Rights Reserved</p>
         </div>
       </div>
     </div>
     <!-- FINE container -->
-
   </footer>
 </template>
 
@@ -132,7 +124,7 @@ export default {
 @use "../assets/scss/partials/variables.scss" as *;
 
 footer {
-    background-color: #F5F5F5;
+  background-color: #f5f5f5;
   ul,
   ul li,
   ul li a {
@@ -147,7 +139,7 @@ footer {
     &:hover {
       color: $green;
     }
-  }  
+  }
   .container {
     padding-top: 100px;
     .row {
@@ -185,5 +177,4 @@ footer {
     }
   }
 }
-
 </style>

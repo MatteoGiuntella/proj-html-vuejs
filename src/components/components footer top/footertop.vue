@@ -40,6 +40,8 @@ export default {
 @use "../../assets/scss/partials/variables.scss" as *;
 
 .button-section {
+  background-color: #F5F5F5;
+  padding-bottom: 50px;
   img:first-of-type {
     position: absolute;
     top: 30%;
