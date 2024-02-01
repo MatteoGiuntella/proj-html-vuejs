@@ -39,6 +39,28 @@ export default {
 @use "../../assets/scss/main.scss" as *;
 @use "../../assets/scss/partials/variables.scss" as *;
 
+@keyframes line-left {
+  0%   {left:5%; top:30%;}
+  50%  {left:5%; top:60%;}
+  100%  {left:5%; top:30%;}
+}
+@keyframes circle-right {
+  0%   {right:5%; bottom:10%;}
+  50%  {right:5%; bottom:60%;}
+  100%  {right:5%; bottom:10%;}
+}
+
+.footer-top:hover img:first-of-type{
+  animation-name: line-left;
+  animation-duration: 2s;
+  // position: relative;
+}
+.footer-top:hover img:last-of-type{
+  animation-name: circle-right;
+  animation-duration: 2s;
+  // position: relative;
+}
+
 .footer-top {
   background-color: #f5f5f5;
 }
