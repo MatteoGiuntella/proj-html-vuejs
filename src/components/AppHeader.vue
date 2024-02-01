@@ -95,14 +95,14 @@ export default {
         <div class="col-6 d-flex justify-content-end">
           <div class="dropdown">
             <a
-              class="btn dropdown-toggle"
+              class="btn dropdown-toggle border-0 "
               href="#"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               <router-link
-                class="px-1 text-decoration-none text-black "
+                class="px-1 text-decoration-none text-black cl-hov"
                 :to="{ name: 'home' }"
               >
                 Home</router-link
@@ -114,12 +114,18 @@ export default {
                 <div class="d-flex">
                   <div class="">
                     <ul class="list-unstyled">
-                      <li class="p-2" v-for="(elem,i) in homelist[0].list1">{{ elem }} </li>
+                      <li class="d-flex flex-column ">
+                        <a class="p-2 text-decoration-none text-black cl-hov" v-for="(elem,i) in homelist[0].list1">{{ elem }} </a>
+                      </li>
+                      
                     </ul>
                   </div>
-                  <div class="mx-2">
+                  <div class="mx-2 ">
                     <ul class="list-unstyled">
-                      <li class="p-2" v-for="(elem,i) in homelist[0].list2"> {{ elem }} </li>
+                      <li class="d-flex flex-column ">
+                        <a class="p-2 text-decoration-none text-black cl-hov" v-for="(elem,i) in homelist[0].list2"> {{ elem }} </a>
+                      </li>
+                      
                     </ul>
                   </div>
                   <div class="p-2">
@@ -134,7 +140,7 @@ export default {
             v-for="(elem, i) in navbar"
           >
             <a
-              class="btn dropdown-toggle"
+              class="btn dropdown-toggle border-0 cl-hov"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -153,20 +159,20 @@ export default {
                           navbar[i].list[j] != 'Start-here' &&
                           navbar[i].list[j] != 'About-us-03'
                         "
-                        class="dropdown-item text-black"
+                        class="dropdown-item text-black cl-hov"
                         href=""
                       >
                         {{ elem }}
                       </a>
                       <router-link
-                        class="px-3 text-decoration-none text-black"
+                        class="px-3 text-decoration-none text-black cl-hov"
                         v-else-if="navbar[i].list[j] == 'Start-here'"
                         :to="{ name: 'aboutus' }"
                       >
                         Aboutus</router-link
                       >
                       <router-link
-                        class="px-3 text-decoration-none text-black"
+                        class="px-3 text-decoration-none text-black cl-hov"
                         v-else-if="navbar[i].list[j] == 'About-us-03'"
                         :to="{ name: 'starthere' }"
                       >
@@ -188,13 +194,13 @@ export default {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="fa-solid fa-cart-shopping fa-sm"></i>
+                <i class="fa-solid fa-cart-shopping fa-sm cl-hov"></i>
                 <div class="number-item">0</div>
               </button>
               <div class="dropdown-menu cart-box w-100">
                 <div class="dropdown-item mb-5 text-center">
                   <i
-                    class="fa-brands fa-opencart fa-2xl"
+                    class="fa-solid fa-cart-shopping fa-2xl"
                     style="color: #20ad96"
                   ></i>
                 </div>
@@ -211,7 +217,7 @@ export default {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="fa-regular fa-user fa-sm"></i>
+                <i class="fa-regular fa-user fa-sm cl-hov"></i>
               </button>
             </div>
           </span>
@@ -261,6 +267,12 @@ header {
       right: 35%;
       background-color: $green;
     }
-    
-  }
+    .cl-hov:hover{
+      color: $green !important;
+    }
+    .my-button:hover{
+      color: $white;
+      background-color: #3F3A64 !important;
+    }
+  } 
 </style>
