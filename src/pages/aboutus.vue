@@ -112,8 +112,20 @@ export default {
 <template>
   <div>
     <offcanvas />
-  <section class="pt-5 bg-section-1">
+  <section class=" bg-section-1 pt-5 ">
     <div class="container pt-5 ">
+      <router-link
+                class="px-1 text-decoration-none text-black"
+                :to="{ name: 'home' }"
+              >
+                Home</router-link
+              >/
+              <router-link
+                class="px-1 text-decoration-none text-black"
+                :to="{ name: 'aboutus' }"
+              >
+                About Us</router-link
+              >
       <div class="row my-5">
         <div class="col-6">
           <h5>EVERYTHING IS MAXCOACH</h5>

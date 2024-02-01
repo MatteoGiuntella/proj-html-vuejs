@@ -102,7 +102,7 @@ export default {
               aria-expanded="false"
             >
               <router-link
-                class="px-1 text-decoration-none text-black"
+                class="px-1 text-decoration-none text-black "
                 :to="{ name: 'home' }"
               >
                 Home</router-link
