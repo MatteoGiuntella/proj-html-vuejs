@@ -183,12 +183,13 @@ export default {
           <span class="box-item-shop d-flex">
             <div class="dropdown">
               <button
-                class="btn dropdown-toggle"
+                class="btn dropdown-toggle position-relative "
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <i class="fa-solid fa-cart-shopping fa-sm"></i>
+                <div class="number-item">0</div>
               </button>
               <div class="dropdown-menu cart-box w-100">
                 <div class="dropdown-item mb-5 text-center">
@@ -240,7 +241,7 @@ header {
   background-color: rgba(245, 241, 237, 0.9);
   z-index: 5;
   .container {
-    position: relative;
+ 
     
     .box-left-navbar {
       width: 150px;
@@ -249,7 +250,17 @@ header {
       }
     }
     }
-
+    .number-item{
+      // height: 10px;
+      width: 10px;
+      border-radius: 10px;
+      color: white;
+      font-size: 10px;
+      position: absolute;
+      top:0%;
+      right: 35%;
+      background-color: $green;
+    }
     
   }
 </style>
