@@ -109,7 +109,7 @@ export default {
   }
 };
 </script>
-
+ 
 <template>
   <div>
     <offcanvas />
