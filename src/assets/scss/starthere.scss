@@ -176,13 +176,12 @@ img {
 
     .container-img {
         height: 350px;
-        // background-color: darkred;
+        object-fit: cover;
 
         img {
             border-radius: 10px;
             width: 100%;
             height: 100%;
-            object-fit: cover;
         }
     }
 
@@ -195,6 +194,19 @@ img {
         p {
             line-height: 2.5;
         }
+    }
+
+
+    .left-side {
+        animation-name: example-left;
+        animation-duration: 1.5s;
+        position: relative;
+    }
+
+    .right-side {
+        animation-name: example-right;
+        animation-duration: 1.5s;
+        position: relative;
     }
 }
 

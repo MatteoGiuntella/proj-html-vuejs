@@ -142,7 +142,7 @@ export default {
           <div class="row">
             <div class="col ">
               <div class="row">
-                <div class="col-6 p-5 border-middle ">
+                <div class="col-6 p-5 border-middle left-side">
                   <div class=" position-relative w-100 ">
                     <h3 class="fw-bold d-flex justify-content-end ">
                       BROADENING
@@ -157,7 +157,7 @@ export default {
                   </div>
                 </div>
                 <!-- FINE col -->
-                <div class="col-6 p-5  position-relative">
+                <div class="col-6 p-5  position-relative right-side">
                   <div class="container-text text-start">
                     <h4 class="fw-bold">
                       #1 Career advancement and hobbies
@@ -178,7 +178,7 @@ export default {
           <div class="row">
             <div class="col ">
               <div class="row">
-                <div class="col-6 border-middle p-5 position-relative">
+                <div class="col-6 border-middle p-5 position-relative left-side">
                   <div class="container-text text-end">
                     <h4 class="fw-bold">
                       #2 Flexible schedule & environment
@@ -188,7 +188,7 @@ export default {
                   </div>
                 </div>
                 <!-- FINE col -->
-                <div class="col-6 p-5 ">
+                <div class="col-6 p-5 right-side">
                   <div class="prova-container position-relative w-100 ">
                     <h3 class="fw-bold d-flex justify-content-start ">
                       SCHEDULING
@@ -215,7 +215,7 @@ export default {
           <div class="row">
             <div class="col ">
               <div class="row">
-                <div class="col-6 p-5 border-middle ">
+                <div class="col-6 p-5 border-middle left-side">
                   <div class="prova-container position-relative w-100 ">
                     <h3 class="fw-bold d-flex justify-content-end ">
                       SELF-DISCIPLINE
@@ -230,7 +230,7 @@ export default {
                   </div>
                 </div>
                 <!-- FINE col -->
-                <div class="col-6 p-5  position-relative">
+                <div class="col-6 p-5  position-relative  right-side">
                   <div class="container-text text-start">
                     
                     <h4 class="fw-bold">
@@ -252,7 +252,7 @@ export default {
           <div class="row">
             <div class="col ">
               <div class="row">
-                <div class="col-6 border-middle p-5 position-relative">
+                <div class="col-6 border-middle p-5 position-relative left-side">
                   <div class="container-text text-end">
                     <h4 class="fw-bold">
                       #4 Smart investment into future
@@ -262,7 +262,7 @@ export default {
                   </div>
                 </div>
                 <!-- FINE col -->
-                <div class="col-6 p-5 ">
+                <div class="col-6 p-5  right-side">
                   <div class="prova-container position-relative w-100 ">
                     <h3 class="fw-bold d-flex justify-content-start ">
                       INVESTMENT
@@ -517,80 +517,19 @@ export default {
       </div>
     </div>
   </main> 
-
-  <!-- <footer class=" mt-5 p-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="list-container" v-for="(footerLeftNav, i) in footerLeftNavs">
-            <div class="fw-bold fs-5">
-              {{ footerLeftNav.title }}
-            </div>
-            <ul>
-              <li  v-for="(listOne, j) in footerLeftNav.list">
-                {{ listOne }}
-              </li>
-            </ul>
-          </div> -->
-          <!-- FINE list-container -->
-<!-- 
-          <div class="social-container">
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="link-icon fab fa-facebook-square"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="link-icon fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="link-icon fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="link-icon fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div> -->
-        <!-- FINE col -->
-        <!-- <div class="col-6 d-flex ">
-          <div class="list-container" v-for="(footerRightNav, i) in footerRightNavs">
-            <div class="fw-bold fs-5">
-              {{ footerRightNav.title }}
-            </div>
-            <ul>
-              <li v-for="(listOne, j) in footerRightNav.list">
-                <a href="#">
-                  {{ listOne}}
-                </a>
-              </li>
-            </ul>
-          </div> -->
-          <!-- FINE list-container -->
-        <!-- </div> -->
-        <!-- FINE col -->
-      <!-- </div> -->
-      <!-- FINE row -->
-      <!-- <div class="row">
-        <div class="col text-center mt-5">
-          <p>
-            © 2020 Maxcoach. All Rights Reserved
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <!-- FINE container -->
-  <!-- </footer>  -->
 </template>
 
 <style lang="scss" scoped>
   @use '../assets/scss/starthere.scss';
   @use '../assets/scss/partials/variables.scss' as *;
+
+  @keyframes example-left {
+    0%   {right:100%; top:0px;}
+    100%  {right:0px; top:0px;}
+  }
+
+  @keyframes example-right {
+    0%   {left:100%; top:0px;}
+    100%  {left:0px; top:0px;}
+  }
 </style>
