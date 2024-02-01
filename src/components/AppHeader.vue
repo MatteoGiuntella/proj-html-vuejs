@@ -2,6 +2,33 @@
 export default {
   data() {
     return {
+      homelist: [
+        {
+          list1: [
+            "MaxCoach Education",
+            "Course Portal",
+            "Distant Learning",
+            "Multimedia Pedagogy",
+            "Modern Schooling",
+            "Remote Training",
+            "Health Coaching",
+            "Gym Coaching",
+            "Business",
+            "Artist",
+          ],
+          list2: [
+            "Kitchen Coach",
+            "Motivation",
+            "Dancing",
+            "Guitar",
+            "Yoga",
+            "Photography",
+            "Personal Finance",
+            "Sales Coaching",
+            "Mental Therapy",
+          ],
+        },
+      ],
       navbar: [
         {
           title: "Pages",
@@ -53,28 +80,54 @@ export default {
       ],
     };
   },
-  methods: {}
+  methods: {},
 };
 </script>
 
 <template>
-  <header class=" position-fixed">
-
+  <header class="position-fixed">
     <div class="container position-relative">
       <div class="row align-items-center p-3">
         <div class="col-2">
-          <img
-            class="w-100"
-            src="/img/dark-logo.png"
-            alt="dark-logo.png"
-          />
+          <img class="w-100" src="/img/dark-logo.png" alt="dark-logo.png" />
         </div>
 
-        <div class="col-6 d-flex justify-content-end ">
-          <div class=" d-flex position-relative ciao">
-            <a  class="btn dropdown-toggle my-drop ">
-              <router-link class="  px-1 text-decoration-none text-black" :to="{ name: 'home' }"> Home</router-link>
+        <div class="col-6 d-flex justify-content-end">
+          <div class="dropdown">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <router-link
+                class="px-1 text-decoration-none text-black"
+                :to="{ name: 'home' }"
+              >
+                Home</router-link
+              >
             </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <div class="d-flex">
+                  <div class="">
+                    <ul class="list-unstyled">
+                      <li v-for="(elem, i) in homelist">{{ elem.list1 }}</li>
+                    </ul>
+                  </div>
+                  <div class="mx-2">
+                    <ul class="list-unstyled">
+                      <li v-for="(elem, i) in homelist">{{ elem.list2 }}</li>
+                    </ul>
+                  </div>
+                  <div class="p-2">
+                    <img src="/img/homepages-mega-menu-image-alt.jpg" alt="" />
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
           <div
             class="dropdown d-flex justify-content-end"
@@ -90,15 +143,40 @@ export default {
               {{ elem.title }}
             </a>
 
-            <ul class="dropdown-menu">
-              <li v-for="(elem, j) in navbar[i].list">
-                <a v-if="(navbar[i].list[j] != 'Start-here') && (navbar[i].list[j] != 'About-us-03')" class="dropdown-item text-black " href="">
-                  {{ elem }}
-                </a>
-                <router-link class="px-3 text-decoration-none text-black " v-else-if="(navbar[i].list[j] == 'Start-here')" :to="{ name: 'aboutus' }"> Aboutus</router-link>
-                <router-link class="px-3 text-decoration-none text-black " v-else-if="(navbar[i].list[j] == 'About-us-03')" :to="{ name: 'starthere' }"> Start here</router-link>
-              </li>
-            </ul>
+            <div>
+              <div>
+                <div>
+                  <ul class="dropdown-menu">
+                    <li v-for="(elem, j) in navbar[i].list">
+                      <a
+                        v-if="
+                          navbar[i].list[j] != 'Start-here' &&
+                          navbar[i].list[j] != 'About-us-03'
+                        "
+                        class="dropdown-item text-black"
+                        href=""
+                      >
+                        {{ elem }}
+                      </a>
+                      <router-link
+                        class="px-3 text-decoration-none text-black"
+                        v-else-if="navbar[i].list[j] == 'Start-here'"
+                        :to="{ name: 'aboutus' }"
+                      >
+                        Aboutus</router-link
+                      >
+                      <router-link
+                        class="px-3 text-decoration-none text-black"
+                        v-else-if="navbar[i].list[j] == 'About-us-03'"
+                        :to="{ name: 'starthere' }"
+                      >
+                        Start here</router-link
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-4 item-box d-flex justify-content-around">
@@ -150,38 +228,6 @@ export default {
           </div>
         </div>
       </div>
-      <div class="hover-container">
-        <div class="d-flex justify-content-between "> 
-          <div class="d-flex">
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-            </ul>
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-            </ul>
-          </div>
-          <div class="mx-3">
-            <img
-              src="/img/homepages-mega-menu-image-alt.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
     </div>
   </header>
 </template>
@@ -195,25 +241,6 @@ header {
   z-index: 5;
   .container {
     position: relative;
-    .hover-container {
-      background-color: $white;
-      width: 90%;
-      position: absolute;
-      left: 100px;
-      bottom: -280px;
-      z-index: 1;
-      display: none;
-      ul {
-        list-style: none;
-        margin: 0;
-        li {
-          margin: 10px;
-        }
-      }
-    }
-    .ciao:active .hover-container {
-        display: block;
-      }
 
     .box-left-navbar {
       width: 150px;
@@ -222,7 +249,5 @@ header {
       }
     }
   }
-  
-  
 }
 </style>

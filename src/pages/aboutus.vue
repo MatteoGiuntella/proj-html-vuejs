@@ -3,6 +3,8 @@ import { store } from "../store.js";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import component2 from "../components/components home page/component2.vue";
+import footertop from "../components/components footer top/footertop.vue";
+import offcanvas  from "../components/components home page/offcanvas.vue";
 export default {
   data() {
     return {
@@ -28,28 +30,28 @@ export default {
       ],
       card: [
         {
-          img: "../../public/img/testimonial-avata-01.jpg",
+          img: "/img/testimonial-avata-01.jpg",
           content:
             "lorem ipsum , Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, enim quos id aperiam soluta accusantium?",
           name: "alex telles",
           role: "/Private Tutor",
         },
         {
-          img: "../../public/img/testimonial-avata-02.jpg",
+          img: "/img/testimonial-avata-02.jpg",
           content:
             "lorem ipsum , Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, enim quos id aperiam soluta accusantium?",
           name: "Marcus Fletcher",
           role: "/MArketing",
         },
         {
-          img: "../../public/img/testimonial-avata-03.jpg",
+          img: "/img/testimonial-avata-03.jpg",
           content:
             "lorem ipsum , Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, enim quos id aperiam soluta accusantium?",
           name: "Sally Coiler",
           role: "/Assistant",
         },
         {
-          img: "../../public/img/testimonial-avata-04.jpg",
+          img: "/img/testimonial-avata-04.jpg",
           content:
             "lorem ipsum , Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, enim quos id aperiam soluta accusantium?",
           name: "Mauro Rossi",
@@ -58,22 +60,22 @@ export default {
       ],
       slider: [
         {
-          icon: "favicon-32x32.png",
+          icon: "client-logo-colored-01.png",
         },
         {
-          icon: "favicon-32x32.png",
+          icon: "client-logo-colored-02.png",
         },
         {
-          icon: "favicon-32x32.png",
+          icon: "client-logo-colored-03.png",
         },
         {
-          icon: "favicon-32x32.png",
+          icon: "client-logo-colored-04.png",
         },
         {
-          icon: "favicon-32x32.png",
+          icon: "client-logo-colored-05.png",
         },
         {
-          icon: "favicon-32x32.png",
+          icon: "client-logo-colored-06.png",
         },
       ],
     };
@@ -81,7 +83,9 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    component2
+    component2,
+    footertop,
+    offcanvas
   },
   methods: {
     getImagePath: function (imgPath) {
@@ -106,6 +110,8 @@ export default {
 </script>
 
 <template>
+  <div>
+    <offcanvas />
   <section class="pt-5">
     <div class="container">
       <div class="row my-5">
@@ -188,7 +194,7 @@ export default {
           class="mySwiper"
         >
           <swiper-slide v-for="(elem, i) in slider">
-            <img :src="getImagePath('../../public/img/' + elem.icon)" alt="" />
+            <img :src="getImagePath('/img/' + elem.icon)" alt="" />
           </swiper-slide>
         </swiper>
       </div>
@@ -253,6 +259,8 @@ export default {
     </div>
   </div>
 </section> 
+  <footertop />
+</div>
 </template>
 
 <style lang="scss" scoped>
