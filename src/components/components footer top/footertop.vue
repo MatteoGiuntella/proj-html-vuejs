@@ -62,7 +62,7 @@ export default {
 }
 
 .footer-top {
-  background-color: #f5f5f5;
+  background-color: rgb(240, 240, 240);
 }
 .button-section {
   padding-bottom: 50px;

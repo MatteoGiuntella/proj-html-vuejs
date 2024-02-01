@@ -339,7 +339,7 @@ section {
 }
 // section 4
 .bg{
-  background-color: #F5F5F5;
+  background-color: rgb(240, 240, 240);
 }
 .bg-box{
     // background-image: url("../../public/img/home-5-image-box-01.png");

@@ -124,7 +124,7 @@ export default {
 @use "../assets/scss/partials/variables.scss" as *;
 
 footer {
-  background-color: #f5f5f5;
+  background-color: rgb(240, 240, 240);
   ul,
   ul li,
   ul li a {
