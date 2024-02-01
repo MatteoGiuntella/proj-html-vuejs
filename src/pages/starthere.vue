@@ -518,7 +518,7 @@ export default {
     </div>
   </main> 
 
-  <footer class=" mt-5 p-5">
+  <!-- <footer class=" mt-5 p-5">
     <div class="container">
       <div class="row">
         <div class="col-6">
@@ -531,9 +531,9 @@ export default {
                 {{ listOne }}
               </li>
             </ul>
-          </div>
+          </div> -->
           <!-- FINE list-container -->
-
+<!-- 
           <div class="social-container">
             <ul>
               <li>
@@ -558,9 +558,9 @@ export default {
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <!-- FINE col -->
-        <div class="col-6 d-flex ">
+        <!-- <div class="col-6 d-flex ">
           <div class="list-container" v-for="(footerRightNav, i) in footerRightNavs">
             <div class="fw-bold fs-5">
               {{ footerRightNav.title }}
@@ -572,22 +572,22 @@ export default {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
           <!-- FINE list-container -->
-        </div>
+        <!-- </div> -->
         <!-- FINE col -->
-      </div>
+      <!-- </div> -->
       <!-- FINE row -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col text-center mt-5">
           <p>
             © 2020 Maxcoach. All Rights Reserved
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- FINE container -->
-  </footer> 
+  <!-- </footer>  -->
 </template>
 
 <style lang="scss" scoped>

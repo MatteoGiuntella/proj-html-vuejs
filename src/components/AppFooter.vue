@@ -44,8 +44,12 @@ export default {
         <img src="../../public/img/maxcoach-shape-02.png" alt="maxcoach-shape-02.png">
 
       <div class="subtitle-section">
-        <span class="fs-4 fw-bold"> Start today for getting </span>
-        <span class="fs-4"> Online Certification </span>
+        <span class="fs-4 fw-bold">
+          Start today for getting
+        </span>
+        <span class="fs-4">
+          Online Certification
+        </span>
       </div>
       <h2 class="fw-bold mb-5">
         You can be your own guiding star with our help!
@@ -124,8 +128,10 @@ export default {
       </div>
       <!-- FINE row -->
       <div class="row">
-        <div class="col text-center mt-5">
-          <p>© 2020 Maxcoach. All Rights Reserved</p>
+        <div class="col text-center mt-3 mb-2">
+          <p>
+            © 2020 Maxcoach. All Rights Reserved
+          </p>
         </div>
       </div>
     </div>
@@ -139,7 +145,7 @@ export default {
 @use "../assets/scss/partials/variables.scss" as *;
 
 footer {
-    background-color: $lightbeige;
+    background-color: #F5F5F5;
   ul,
   ul li,
   ul li a {
